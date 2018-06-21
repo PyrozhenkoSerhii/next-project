@@ -4,7 +4,7 @@ import {API_URL, PRODUCTS} from "../../assets/config/api";
 
 const View = (props) => (
     <Layout>
-        <h3>Product View</h3>
+        <h3 style={{textAlign: 'center'}}>Product View</h3>
         <hr />
         <h5>{props.product.title}</h5>
         <h6>Specification</h6>
@@ -22,12 +22,10 @@ View.getInitialProps = async function (context) {
         method: 'POST',
         body: JSON.stringify({id: context.query.id}),
         headers: {
-            'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
     });
     const data = await res.json();
-    console.log(data.product);
     return {product: data.product};
 };
 

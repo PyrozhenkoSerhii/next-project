@@ -1,8 +1,46 @@
 module.exports =
 
-        __NEXT_REGISTER_PAGE('/about', function() {
+        __NEXT_REGISTER_PAGE('/product/view', function() {
           var comp = 
-      webpackJsonp([7],{
+      webpackJsonp([5],{
+
+/***/ "./assets/config/api.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_URL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PRODUCTS; });
+/* unused harmony export USERS */
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var API_URL = 'https://obscure-stream-46512.herokuapp.com/';
+var PRODUCTS = 'products/';
+var USERS = 'users/';
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(API_URL, "API_URL", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
+  reactHotLoader.register(PRODUCTS, "PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
+  reactHotLoader.register(USERS, "USERS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
 
 /***/ "./components/layout.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -486,6 +524,14 @@ module.exports = function hasSymbols() {
 var bind = __webpack_require__("./node_modules/function-bind/index.js");
 
 module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
+
+
+/***/ }),
+
+/***/ "./node_modules/isomorphic-unfetch/browser.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = window.fetch || (window.fetch = __webpack_require__("./node_modules/unfetch/dist/unfetch.es.js").default || __webpack_require__("./node_modules/unfetch/dist/unfetch.es.js"));
 
 
 /***/ }),
@@ -1169,15 +1215,21 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/about.js":
+/***/ "./pages/product/view.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layout__ = __webpack_require__("./components/layout.js");
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\pages\\about.js";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__ = __webpack_require__("./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_layout__ = __webpack_require__("./components/layout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch__ = __webpack_require__("./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__assets_config_api__ = __webpack_require__("./assets/config/api.js");
+
+var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\view.js";
 
 
 (function () {
@@ -1186,23 +1238,104 @@ var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\pages\\about.js";
   enterModule && enterModule(module);
 })();
 
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } } function _next(value) { step("next", value); } function _throw(err) { step("throw", err); } _next(); }); }; }
 
 
-var About = function About() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_layout__["a" /* default */], {
+
+
+
+var View = function View(props) {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h3", {
+    style: {
+      textAlign: 'center'
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     }
-  }, "About"));
+  }, "Product View"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, props.product.title), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h6", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, "Specification"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, props.product.specification.map(function (element) {
+    return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("li", {
+      key: element.name,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    }, element.name, ":", element.value);
+  })));
 };
 
-var _default = About;
+View.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref = _asyncToGenerator(
+  /*#__PURE__*/
+  __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(context) {
+    var res, data;
+    return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_4__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_4__assets_config_api__["b" /* PRODUCTS */] + 'getById', {
+              method: 'POST',
+              body: JSON.stringify({
+                id: context.query.id
+              }),
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            });
+
+          case 2:
+            res = _context.sent;
+            _context.next = 5;
+            return res.json();
+
+          case 5:
+            data = _context.sent;
+            return _context.abrupt("return", {
+              product: data.product
+            });
+
+          case 7:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+var _default = View;
 /* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
@@ -1215,8 +1348,8 @@ var _default = About;
     return;
   }
 
-  reactHotLoader.register(About, "About", "E:\\Projects\\serhii\\nextjs-project\\pages\\about.js");
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\pages\\about.js");
+  reactHotLoader.register(View, "View", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\view.js");
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\view.js");
   leaveModule(module);
 })();
 
@@ -1237,22 +1370,22 @@ var _default = About;
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/about")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/product\\view")
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/about.js");
+module.exports = __webpack_require__("./pages/product/view.js");
 
 
 /***/ })
 
-},[6])
+},[4])
           return { page: comp.default }
         })
       ;
-//# sourceMappingURL=about.js.map
+//# sourceMappingURL=view.js.map

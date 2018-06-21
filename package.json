@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "file-loader": "^1.1.11",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.3",
     "react": "^16.4.1",

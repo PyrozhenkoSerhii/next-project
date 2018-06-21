@@ -5,7 +5,7 @@ import {API_URL, PRODUCTS} from "../../assets/config/api";
 
 const Catalog = (props) => (
     <Layout>
-        <h3>Catalog</h3>
+        <h3 style={{textAlign: 'center'}}>Catalog</h3>
         <ul>
             {props.products.map((product) => (
                 <div className="productWrapper" key={product._id}>
@@ -13,13 +13,18 @@ const Catalog = (props) => (
                     <h6 align="center">{product.title}</h6>
                     <h6 align="center">{product.price}$</h6>
                     <Link as={`/product/view/${product.title}`} href={`/product/view?id=${product._id}`}>
-                        <a>Forward</a>
+                        <p className="forwardP">Forward</p>
                     </Link>
-
                 </div>
             ))}
         </ul>
         <style jsx>{`
+            .forwardP {
+                color: green;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+            }
             .productWrapper{
                 vertical-align: top;
                 border: 1px solid #cacaca;
@@ -58,9 +63,7 @@ const Catalog = (props) => (
 Catalog.getInitialProps = async function () {
     const res = await fetch(API_URL + PRODUCTS + 'getAll', {method: 'GET'});
     const data = await res.json();
-    if (data.success)
-        return {products: data.products};
-    return {products: {}}
+    return {products: data.products};
 };
 
 export default Catalog;
