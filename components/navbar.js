@@ -23,6 +23,16 @@ const Navbar = () => (
                                 <a className="nav-link">Catalog</a>
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link href="/user/login">
+                                <a className="nav-link">Login</a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href="/user/register">
+                                <a className="nav-link">Register</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
