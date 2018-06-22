@@ -10,6 +10,7 @@ app.prepare()
         const server = express();
 
         server.get('/product/view/:id', (req, res) => {
+            console.log('product view');
             const actualPage = '/post/view';
             const queryParams = { id: req.params.id };
             app.render(req, res, actualPage, queryParams)

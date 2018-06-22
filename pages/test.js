@@ -2,6 +2,12 @@ import React from 'react';
 import Layout from '../components/layout';
 
 class Test extends React.Component {
+    static getInitialProps({ req }) {
+        console.log('Request : ', req);
+        return {
+            server: !!req
+        }
+    }
     render() {
         return (
             <Layout>
@@ -12,11 +18,5 @@ class Test extends React.Component {
         );
     }
 }
-
-Test.getInitialProps = ({req}) => {
-    return {
-        server: !!req
-    }
-};
 
 export default Test;

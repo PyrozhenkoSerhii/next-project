@@ -12,7 +12,7 @@ const Catalog = (props) => (
                     <img className="productImage" src={product.image}/>
                     <h6 align="center">{product.title}</h6>
                     <h6 align="center">{product.price}$</h6>
-                    <Link as={`/product/view/${product.title}`} href={`/product/view?id=${product._id}`}>
+                    <Link href={`/product/view?id=${product._id}`}>
                         <p className="forwardP">Forward</p>
                     </Link>
                 </div>
