@@ -67,12 +67,158 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ "./assets/config/api.js":
+module.exports = require("react");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = require("next/link");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
+
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(3);
+var head__default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: external "next/link"
+var link_ = __webpack_require__(1);
+var link__default = /*#__PURE__*/__webpack_require__.n(link_);
+
+// CONCATENATED MODULE: ./components/navbar.js
+
+
+
+var navbar_Navbar = function Navbar() {
+  return external__react__default.a.createElement("div", null, external__react__default.a.createElement("div", {
+    className: "navbar navbar-expand-lg fixed-top navbar-dark bg-primary"
+  }, external__react__default.a.createElement("div", {
+    className: "container"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/"
+  }, external__react__default.a.createElement("a", {
+    className: "navbar-brand"
+  }, "Next.js Project")), external__react__default.a.createElement("button", {
+    className: "navbar-toggler",
+    type: "button",
+    "data-toggle": "collapse",
+    "data-target": "#navbarResponsive",
+    "aria-controls": "navbarResponsive",
+    "aria-expanded": "false",
+    "aria-label": "Toggle navigation"
+  }, external__react__default.a.createElement("span", {
+    className: "navbar-toggler-icon"
+  })), external__react__default.a.createElement("div", {
+    className: "collapse navbar-collapse",
+    id: "navbarResponsive"
+  }, external__react__default.a.createElement("ul", {
+    className: "navbar-nav"
+  }, external__react__default.a.createElement("li", {
+    className: "nav-item"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/about"
+  }, external__react__default.a.createElement("a", {
+    className: "nav-link"
+  }, "About"))), external__react__default.a.createElement("li", {
+    className: "nav-item"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/product/catalog"
+  }, external__react__default.a.createElement("a", {
+    className: "nav-link"
+  }, "Catalog"))), external__react__default.a.createElement("li", {
+    className: "nav-item"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/user/login"
+  }, external__react__default.a.createElement("a", {
+    className: "nav-link"
+  }, "Login"))), external__react__default.a.createElement("li", {
+    className: "nav-item"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/user/register"
+  }, external__react__default.a.createElement("a", {
+    className: "nav-link"
+  }, "Register"))), external__react__default.a.createElement("li", {
+    className: "nav-item"
+  }, external__react__default.a.createElement(link__default.a, {
+    href: "/test"
+  }, external__react__default.a.createElement("a", {
+    className: "nav-link"
+  }, "Test"))))))), external__react__default.a.createElement("br", null), external__react__default.a.createElement("br", null), external__react__default.a.createElement("br", null));
+};
+
+/* harmony default export */ var navbar = (navbar_Navbar);
+// CONCATENATED MODULE: ./components/layout.js
+
+
+
+
+var layout_Layout = function Layout(props) {
+  return external__react__default.a.createElement("div", null, external__react__default.a.createElement(head__default.a, null, external__react__default.a.createElement("title", null, "Next project"), external__react__default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "https://bootswatch.com/4/cerulean/bootstrap.min.css"
+  })), external__react__default.a.createElement(navbar, null), external__react__default.a.createElement("div", {
+    className: "container"
+  }, props.children));
+};
+
+/* harmony default export */ var layout = __webpack_exports__["a"] = (layout_Layout);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return clockTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SET_COUNT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SAVE_USER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SAVE_TOKEN; });
+var clockTypes = {
+  TICK: 'TICK',
+  INCREMENT: 'INCREMENT',
+  DECREMENT: 'DECREMENT',
+  RESET: 'RESET'
+};
+var SET_COUNT = 'SET_COUNT';
+var SAVE_USER = 'SAVE_USER';
+var SAVE_TOKEN = 'SAVE_TOKEN';
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-bootstrap");
+
+/***/ }),
+/* 7 */,
+/* 8 */,
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -84,265 +230,76 @@ var PRODUCTS = 'products/';
 var CUSTOMERS = 'customers/';
 
 /***/ }),
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ "./components/layout.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+module.exports = __webpack_require__(27);
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("next/head");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar__ = __webpack_require__("./components/navbar.js");
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\layout.js";
-
-
-
-
-var Layout = function Layout(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, "Next project"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
-    rel: "stylesheet",
-    href: "https://bootswatch.com/4/cerulean/bootstrap.min.css",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__navbar__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    }
-  }, props.children));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Layout);
 
 /***/ }),
-
-/***/ "./components/navbar.js":
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
+// EXTERNAL MODULE: external "react-redux"
+var external__react_redux_ = __webpack_require__(4);
+var external__react_redux__default = /*#__PURE__*/__webpack_require__.n(external__react_redux_);
 
-var Navbar = function Navbar() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "navbar navbar-expand-lg fixed-top navbar-dark bg-primary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "navbar-brand",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, "Next.js Project")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "navbar-toggler",
-    type: "button",
-    "data-toggle": "collapse",
-    "data-target": "#navbarResponsive",
-    "aria-controls": "navbarResponsive",
-    "aria-expanded": "false",
-    "aria-label": "Toggle navigation",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
-    className: "navbar-toggler-icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "collapse navbar-collapse",
-    id: "navbarResponsive",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
-    className: "navbar-nav",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    }
-  }, "About"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/product/catalog",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    }
-  }, "Catalog"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/user/login",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "Login"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/user/register",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    }
-  }, "Register"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/test",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    }
-  }, "Test"))))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    }
-  }));
+// EXTERNAL MODULE: ./redux/costants/actionTypes.js
+var actionTypes = __webpack_require__(5);
+
+// CONCATENATED MODULE: ./redux/actions/user.js
+
+var user_saveUser = function saveUser(user) {
+  return {
+    type: actionTypes["b" /* SAVE_USER */],
+    payload: user
+  };
 };
+var user_saveToken = function saveToken(token) {
+  return {
+    type: actionTypes["a" /* SAVE_TOKEN */],
+    payload: token
+  };
+};
+// EXTERNAL MODULE: external "axios"
+var external__axios_ = __webpack_require__(28);
+var external__axios__default = /*#__PURE__*/__webpack_require__.n(external__axios_);
 
-/* harmony default export */ __webpack_exports__["a"] = (Navbar);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(29);
+var router__default = /*#__PURE__*/__webpack_require__.n(router_);
 
-/***/ }),
+// EXTERNAL MODULE: ./assets/config/api.js
+var api = __webpack_require__(9);
 
-/***/ "./components/user/login.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+// EXTERNAL MODULE: external "react-bootstrap"
+var external__react_bootstrap_ = __webpack_require__(6);
+var external__react_bootstrap__default = /*#__PURE__*/__webpack_require__.n(external__react_bootstrap_);
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__redux_actions_user__ = __webpack_require__("./redux/actions/user.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios__ = __webpack_require__("axios");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router__ = __webpack_require__("next/router");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__assets_config_api__ = __webpack_require__("./assets/config/api.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__);
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\user\\login.js";
-
+// CONCATENATED MODULE: ./components/user/login.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -370,7 +327,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
-var Login =
+var login_Login =
 /*#__PURE__*/
 function (_React$Component) {
   _inherits(Login, _React$Component);
@@ -401,7 +358,7 @@ function (_React$Component) {
           username: _this.state.username,
           password: _this.state.password
         };
-        __WEBPACK_IMPORTED_MODULE_3_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["b" /* CUSTOMERS */] + 'authenticate', {
+        external__axios__default.a.post(api["a" /* API_URL */] + api["b" /* CUSTOMERS */] + 'authenticate', {
           customer: customer
         }, _this.config).then(function (response) {
           console.log(response);
@@ -450,227 +407,75 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.redirect) {
-        __WEBPACK_IMPORTED_MODULE_4_next_router___default.a.push('/product/catalog');
+        router__default.a.push('/product/catalog');
       }
 
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("form", {
-        onSubmit: this.handleSubmit,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["FormGroup"], {
+      return external__react__default.a.createElement("div", null, external__react__default.a.createElement("form", {
+        onSubmit: this.handleSubmit
+      }, external__react__default.a.createElement(external__react_bootstrap_["FormGroup"], {
         controlId: "username",
-        bsSize: "large",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["ControlLabel"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        }
-      }, "Username"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["FormControl"], {
+        bsSize: "large"
+      }, external__react__default.a.createElement(external__react_bootstrap_["ControlLabel"], null, "Username"), external__react__default.a.createElement(external__react_bootstrap_["FormControl"], {
         type: "text",
         value: this.state.username,
-        onChange: this.handleChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["FormGroup"], {
+        onChange: this.handleChange
+      })), external__react__default.a.createElement(external__react_bootstrap_["FormGroup"], {
         controlId: "password",
-        bsSize: "large",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["ControlLabel"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 72
-        }
-      }, "Password"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["FormControl"], {
+        bsSize: "large"
+      }, external__react__default.a.createElement(external__react_bootstrap_["ControlLabel"], null, "Password"), external__react__default.a.createElement(external__react_bootstrap_["FormControl"], {
         type: "password",
         value: this.state.password,
-        onChange: this.handleChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_bootstrap__["Button"], {
+        onChange: this.handleChange
+      })), external__react__default.a.createElement(external__react_bootstrap_["Button"], {
         disabled: !this.validateForm(),
         className: "btn btn-success",
-        type: "submit",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 75
-        }
+        type: "submit"
       }, "Login")));
     }
   }]);
 
   return Login;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+}(external__react__default.a.Component);
 
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+var login_mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     saveUser: function saveUser(user) {
-      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_2__redux_actions_user__["b" /* saveUser */])(user));
+      return dispatch(user_saveUser(user));
     },
     saveToken: function saveToken(token) {
-      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_2__redux_actions_user__["a" /* saveToken */])(token));
+      return dispatch(user_saveToken(token));
     }
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["connect"])(null, mapDispatchToProps)(Login));
+/* harmony default export */ var login = (Object(external__react_redux_["connect"])(null, login_mapDispatchToProps)(login_Login));
+// EXTERNAL MODULE: ./components/layout.js + 1 modules
+var layout = __webpack_require__(2);
 
-/***/ }),
-
-/***/ "./pages/user/login.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_user_login__ = __webpack_require__("./components/user/login.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_layout__ = __webpack_require__("./components/layout.js");
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\pages\\user\\login.js";
+// CONCATENATED MODULE: ./pages/user/login.js
 
 
 
 
-var Login = function Login() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
-    align: "center",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, "Login"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_user_login__["a" /* default */], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }));
+var user_login_Login = function Login() {
+  return external__react__default.a.createElement(layout["a" /* default */], null, external__react__default.a.createElement("h2", {
+    align: "center"
+  }, "Login"), external__react__default.a.createElement(login, null));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+/* harmony default export */ var user_login = __webpack_exports__["default"] = (user_login_Login);
 
 /***/ }),
-
-/***/ "./redux/actions/user.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveUser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return saveToken; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
-
-var saveUser = function saveUser(user) {
-  return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* SAVE_USER */],
-    payload: user
-  };
-};
-var saveToken = function saveToken(token) {
-  return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["a" /* SAVE_TOKEN */],
-    payload: token
-  };
-};
-
-/***/ }),
-
-/***/ "./redux/costants/actionTypes.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return clockTypes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SET_COUNT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SAVE_USER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SAVE_TOKEN; });
-var clockTypes = {
-  TICK: 'TICK',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
-  RESET: 'RESET'
-};
-var SET_COUNT = 'SET_COUNT';
-var SAVE_USER = 'SAVE_USER';
-var SAVE_TOKEN = 'SAVE_TOKEN';
-
-/***/ }),
-
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/user/login.js");
-
-
-/***/ }),
-
-/***/ "axios":
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-
-/***/ "next/head":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "next/link":
-/***/ (function(module, exports) {
-
-module.exports = require("next/link");
-
-/***/ }),
-
-/***/ "next/router":
+/* 29 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/router");
 
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-bootstrap":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap");
-
-/***/ }),
-
-/***/ "react-redux":
-/***/ (function(module, exports) {
-
-module.exports = require("react-redux");
-
 /***/ })
-
-/******/ });
-//# sourceMappingURL=login.js.map
+/******/ ]);

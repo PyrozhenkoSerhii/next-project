@@ -5,7 +5,7 @@ import {API_URL, PRODUCTS} from "../../assets/config/api";
 
 const Catalog = (props) => (
     <Layout>
-        <h3 style={{textAlign: 'center'}}>Catalog</h3>
+        <h3 align="center">Catalog</h3>
         <ul>
             {props.products.map((product) => (
                 <div className="productWrapper" key={product._id}>
