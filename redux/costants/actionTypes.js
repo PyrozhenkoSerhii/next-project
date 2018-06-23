@@ -4,3 +4,8 @@ export const clockTypes = {
     DECREMENT: 'DECREMENT',
     RESET: 'RESET'
 };
+
+export const SET_COUNT = 'SET_COUNT';
+
+export const SAVE_USER = 'SAVE_USER';
+export const SAVE_TOKEN = 'SAVE_TOKEN';

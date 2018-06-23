@@ -1,11 +1,24 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {saveUser, saveToken} from "../../redux/actions/user";
+import axios from 'axios';
+import Router from 'next/router';
+
+import {API_URL, CUSTOMERS} from "../../assets/config/api";
 
 import {FormGroup} from 'react-bootstrap';
 import {ControlLabel} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 
-export default class Login extends React.Component {
+
+class Login extends React.Component {
+    config = {
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    };
+
     constructor(props) {
         super();
         this.state = {
@@ -17,12 +30,21 @@ export default class Login extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-
-        //todo login request
-        console.log('logged in');
-        this.setState({
-            redirect: true,
-        })
+        const customer = {username: this.state.username, password: this.state.password};
+        axios.post(API_URL + CUSTOMERS + 'authenticate', {customer}, this.config)
+            .then((response) => {
+                console.log(response);
+                if (response.data.success) {
+                    this.props.saveUser(response.data.customer);
+                    this.props.saveToken(response.data.token);
+                    this.setState({
+                        redirect: true,
+                    });
+                    console.log(response);
+                } else {
+                    console.log('wrong user data');
+                }
+            })
     };
 
     handleChange = (e) => {
@@ -35,11 +57,11 @@ export default class Login extends React.Component {
         return this.state.username.length > 2 && this.state.password.length > 2;
     };
 
-    render(){
-        if(this.state.redirect){
-            //todo redirect
+    render() {
+        if (this.state.redirect) {
+            Router.push('/product/catalog');
         }
-        return(
+        return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="username" bsSize="large">
@@ -56,3 +78,12 @@ export default class Login extends React.Component {
         );
     }
 }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        saveUser: user => dispatch(saveUser(user)),
+        saveToken: token => dispatch(saveToken(token))
+    }
+};
+
+export default connect(null, mapDispatchToProps)(Login);

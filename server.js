@@ -17,7 +17,7 @@ app.prepare()
         });
 
         server.get('*', (req, res) => {
-            console.log('server');
+            console.log('tick');
             return handle(req, res)
         });
 

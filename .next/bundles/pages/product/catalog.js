@@ -9,8 +9,8 @@ module.exports =
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_URL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PRODUCTS; });
-/* unused harmony export USERS */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PRODUCTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CUSTOMERS; });
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -19,7 +19,7 @@ module.exports =
 
 var API_URL = 'https://obscure-stream-46512.herokuapp.com/';
 var PRODUCTS = 'products/';
-var USERS = 'users/';
+var CUSTOMERS = 'customers/';
 ;
 
 (function () {
@@ -33,7 +33,7 @@ var USERS = 'users/';
 
   reactHotLoader.register(API_URL, "API_URL", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
   reactHotLoader.register(PRODUCTS, "PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
-  reactHotLoader.register(USERS, "USERS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
+  reactHotLoader.register(CUSTOMERS, "CUSTOMERS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
   leaveModule(module);
 })();
 
@@ -2429,7 +2429,7 @@ __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_6__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_6__assets_config_api__["b" /* PRODUCTS */] + 'getAll', {
+          return __WEBPACK_IMPORTED_MODULE_4_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_6__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_6__assets_config_api__["c" /* PRODUCTS */] + 'getAll', {
             method: 'GET'
           });
 
@@ -2492,7 +2492,7 @@ var _default = Catalog;
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/product/catalog.js");
@@ -2500,7 +2500,7 @@ module.exports = __webpack_require__("./pages/product/catalog.js");
 
 /***/ })
 
-},[5])
+},[4])
           return { page: comp.default }
         })
       ;
