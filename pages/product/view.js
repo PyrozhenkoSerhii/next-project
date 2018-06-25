@@ -20,10 +20,12 @@ class View extends React.Component {
     }
 
     constructor(props) {
+        console.log('product state', props.productState);
         super();
+        const product = props.productState.find((obj) => obj.id === props.product._id)
         this.state = {
-            localCount: props.initialCount
-        }
+            localCount: product === undefined ? 0 : product.count
+        };
     }
 
     increaseCount = () => {
@@ -42,9 +44,13 @@ class View extends React.Component {
         })
     };
     orderProduct = () => {
-        console.log('order');
-        this.props.order(this.state.localCount);
+        const productState = {id: this.props.product._id, count: this.state.localCount};
+        this.props.order(productState);
+        this.setState({
+            localCount: 0
+        })
     };
+
 
     render() {
         return (
@@ -92,7 +98,7 @@ const mapDispatchToProps = dispatch => {
 };
 
 const mapStateToProps = state => {
-    return {initialCount: state.product.productCount}
+    return {productState: state.product.productState}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(View);

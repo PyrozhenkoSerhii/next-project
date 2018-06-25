@@ -1,5 +1,5 @@
 import App from 'next/app'
-import initializeStore from '../redux/store';
+import initializeStore from './store';
 
 const isServer = typeof window === 'undefined';
 const REDUX_STORE = 'REDUX_STORE';
@@ -8,11 +8,7 @@ function getOrCreateStore(initialState){
     if(isServer){
         return initializeStore(initialState);
     }
-    if(!window[REDUX_STORE]){
-        window[REDUX_STORE] = initializeStore(initialState);
-    }
-
-    return window[REDUX_STORE];
+    return window[REDUX_STORE] = initializeStore(initialState);
 }
 
 export default (App) => {
@@ -34,7 +30,8 @@ export default (App) => {
         }
         constructor(props){
             super(props);
-            this.reduxStore = getOrCreateStore(props.initialReduxState);
+            // this.reduxStore = getOrCreateStore(props.initialReduxState);
+            this.reduxStore = initializeStore(props.initialReduxState);
         }
 
         render(){
@@ -43,6 +40,4 @@ export default (App) => {
             );
         }
     }
-
-
 }

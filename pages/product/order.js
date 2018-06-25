@@ -3,6 +3,10 @@ import {connect} from 'react-redux'
 import Layout from "../../components/layout";
 
 class Order extends Component{
+    constructor(props){
+        super();
+    }
+
     render(){
         return(
             <Layout>
@@ -13,7 +17,7 @@ class Order extends Component{
 }
 
 const mapStateToProps = (state) => {
-    return {productCount: state.product.productCount}
+    return {productState: state.product.productState}
 };
 
 export default connect(mapStateToProps, null)(Order);

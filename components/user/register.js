@@ -4,6 +4,7 @@ import {FormGroup} from 'react-bootstrap';
 import {ControlLabel} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import Route from 'next/router';
 
 export default class Register extends React.Component {
     constructor(props){
@@ -40,7 +41,7 @@ export default class Register extends React.Component {
 
     render(){
         if(this.state.redirect){
-            //todo redirect
+            Router.push('/user/login');
         }
         return(
             <div>
