@@ -256,8 +256,9 @@ function productReducer() {
       });
 
     case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* UPLOAD_PRODUCTS */]:
+      console.log('payload', action.payload);
       return _objectSpread({}, state, {
-        products: [action.payload]
+        products: action.payload
       });
 
     default:
@@ -394,7 +395,11 @@ function getOrCreateStore(initialState) {
     return Object(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */])(initialState);
   }
 
-  return window[REDUX_STORE] = Object(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */])(initialState);
+  if (!window[REDUX_STORE]) {
+    window[REDUX_STORE] = Object(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */])(initialState);
+  }
+
+  return window[REDUX_STORE];
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (function (App) {
@@ -453,9 +458,8 @@ function getOrCreateStore(initialState) {
 
         _classCallCheck(this, Redux);
 
-        _this = _possibleConstructorReturn(this, (Redux.__proto__ || Object.getPrototypeOf(Redux)).call(this, props)); // this.reduxStore = getOrCreateStore(props.initialReduxState);
-
-        _this.reduxStore = Object(__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */])(props.initialReduxState);
+        _this = _possibleConstructorReturn(this, (Redux.__proto__ || Object.getPrototypeOf(Redux)).call(this, props));
+        _this.reduxStore = getOrCreateStore(props.initialReduxState);
         return _this;
       }
 
@@ -466,7 +470,7 @@ function getOrCreateStore(initialState) {
             reduxStore: this.reduxStore,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 42
             }
           }));
         }

@@ -4412,13 +4412,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
@@ -4435,116 +4435,49 @@ var Catalog =
 function (_React$Component) {
   _inherits(Catalog, _React$Component);
 
-  function Catalog() {
-    _classCallCheck(this, Catalog);
-
-    return _possibleConstructorReturn(this, (Catalog.__proto__ || Object.getPrototypeOf(Catalog)).apply(this, arguments));
-  }
-
-  _createClass(Catalog, [{
-    key: "render",
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        }
-      }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h3", {
-        align: "center",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        className: "jsx-385362788"
-      }, "Catalog"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("ul", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        className: "jsx-385362788"
-      }, this.props.products.map(function (product) {
-        return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("div", {
-          key: product._id,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 24
-          },
-          className: "jsx-385362788" + " " + "productWrapper"
-        }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("img", {
-          src: product.image,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 25
-          },
-          className: "jsx-385362788" + " " + "productImage"
-        }), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
-          align: "center",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 26
-          },
-          className: "jsx-385362788"
-        }, product.title), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
-          align: "center",
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 27
-          },
-          className: "jsx-385362788"
-        }, product.price, "$"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_next_link___default.a, {
-          href: "/product/view?id=".concat(product._id),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 28
-          }
-        }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("p", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 29
-          },
-          className: "jsx-385362788" + " " + "forwardP"
-        }, "Forward")));
-      })), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_styled_jsx_style___default.a, {
-        styleId: "385362788",
-        css: ".forwardP.jsx-385362788{color:green;font-size:20px;text-align:center;cursor:pointer;}.productWrapper.jsx-385362788{vertical-align:top;border:1px solid #cacaca;background:#f8f1ff;margin:20px 10px 20px 10px;padding:10px;position:static;display:inline-block;border-radius:15px;width:20%;min-height:200px;min-width:200px;}.productImage.jsx-385362788{background-repeat:no-repeat;width:100%;height:auto;max-width:200px;height:200px;}.btnForward.jsx-385362788{width:30px;height:30px;background:transparent;border:none;cursor:pointer;background-size:100%;background-size:30px auto;background-repeat:no-repeat;margin-left:65%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwcm9kdWN0XFxjYXRhbG9nLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlDNEIsQUFHNkIsQUFNTyxBQWFTLEFBT2pCLFdBQ0MsQ0ExQkcsT0FNVSxJQXFCRixJQTFCTCxDQWtCUCxXQUNDLEtBYk8sQ0FMSixDQTBCSCxLQVBJLE9BUUQsRUExQm5CLEdBSytCLElBY2QsTUFRUSxPQVB6QixVQWRpQixJQXNCYSxTQXJCVixnQkFDSyxDQXFCTyxvQkFwQlQsUUFxQkgsV0FwQk4sS0FxQmQsS0FwQnFCLGlCQUNELGdCQUNwQiIsImZpbGUiOiJwYWdlc1xccHJvZHVjdFxcY2F0YWxvZy5qcyIsInNvdXJjZVJvb3QiOiJFOlxcUHJvamVjdHNcXHNlcmhpaVxcbmV4dGpzLXByb2plY3QiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvbGF5b3V0JztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7QVBJX1VSTCwgUFJPRFVDVFN9IGZyb20gXCIuLi8uLi9hc3NldHMvY29uZmlnL2FwaVwiO1xyXG5pbXBvcnQge3VwbG9hZFByb2R1Y3RzfSBmcm9tIFwiLi4vLi4vcmVkdXgvYWN0aW9ucy9wcm9kdWN0XCI7XHJcbmltcG9ydCB7Y29ubmVjdH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuXHJcbmNsYXNzIENhdGFsb2cgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyhjb250ZXh0KXtcclxuICAgICAgICBjb25zb2xlLmxvZygnaW5pdGlhbCBwcm9wcycpO1xyXG4gICAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKEFQSV9VUkwgKyBQUk9EVUNUUyArICdnZXRBbGwnLCB7bWV0aG9kOiAnR0VUJ30pO1xyXG4gICAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xyXG4gICAgICAgIHJldHVybiB7cHJvZHVjdHM6IGRhdGEucHJvZHVjdHN9O1xyXG4gICAgfVxyXG5cclxuICAgIHJlbmRlcigpe1xyXG4gICAgICAgIHJldHVybihcclxuICAgICAgICAgICAgPExheW91dD5cclxuICAgICAgICAgICAgICAgIDxoMyBhbGlnbj1cImNlbnRlclwiPkNhdGFsb2c8L2gzPlxyXG4gICAgICAgICAgICAgICAgPHVsPlxyXG4gICAgICAgICAgICAgICAgICAgIHt0aGlzLnByb3BzLnByb2R1Y3RzLm1hcCgocHJvZHVjdCkgPT4gKFxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInByb2R1Y3RXcmFwcGVyXCIga2V5PXtwcm9kdWN0Ll9pZH0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cInByb2R1Y3RJbWFnZVwiIHNyYz17cHJvZHVjdC5pbWFnZX0vPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGFsaWduPVwiY2VudGVyXCI+e3Byb2R1Y3QudGl0bGV9PC9oNj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoNiBhbGlnbj1cImNlbnRlclwiPntwcm9kdWN0LnByaWNlfSQ8L2g2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj17YC9wcm9kdWN0L3ZpZXc/aWQ9JHtwcm9kdWN0Ll9pZH1gfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb3J3YXJkUFwiPkZvcndhcmQ8L3A+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L0xpbms+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgICAgICkpfVxyXG4gICAgICAgICAgICAgICAgPC91bD5cclxuICAgICAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgLmZvcndhcmRQIHtcclxuICAgICAgICAgICAgICAgIGNvbG9yOiBncmVlbjtcclxuICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgICAgICAgICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAucHJvZHVjdFdyYXBwZXJ7XHJcbiAgICAgICAgICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NhY2FjYTtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6ICNmOGYxZmY7XHJcbiAgICAgICAgICAgICAgICBtYXJnaW46IDIwcHggMTBweCAyMHB4IDEwcHg7XHJcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiAxMHB4O1xyXG4gICAgICAgICAgICAgICAgcG9zaXRpb246IHN0YXRpYztcclxuICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XHJcbiAgICAgICAgICAgICAgICB3aWR0aDogMjAlO1xyXG4gICAgICAgICAgICAgICAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgICAgICAgICAgICAgICBtaW4td2lkdGg6IDIwMHB4O1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5wcm9kdWN0SW1hZ2Uge1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgICAgICAgICAgICAgbWF4LXdpZHRoOiAyMDBweDtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLmJ0bkZvcndhcmQge1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDMwcHg7XHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IDMwcHg7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxuICAgICAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcclxuICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogMTAwJTtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQtc2l6ZTogMzBweCBhdXRvO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiA2NSU7XHJcbiAgICAgICAgICAgIH1cclxuICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9MYXlvdXQ+XHJcbiAgICAgICAgKTtcclxuICAgIH1cclxufVxyXG5cclxuY29uc3QgbWFwU3RhdGVUb1Byb3BzID0gc3RhdGUgPT4ge1xyXG4gICAgcmV0dXJuIHtcclxuICAgICAgICBwcm9kdWN0czogc3RhdGUucHJvZHVjdC5wcm9kdWN0c1xyXG4gICAgfVxyXG59O1xyXG5cclxuY29uc3QgbWFwRGlzcGF0Y2hUb1Byb3BzID0gZGlzcGF0Y2ggPT4ge1xyXG4gICAgcmV0dXJuIHtcclxuICAgICAgICB1cGxvYWRQcm9kdWN0czogcHJvZHVjdHMgPT4gZGlzcGF0Y2godXBsb2FkUHJvZHVjdHMocHJvZHVjdHMpKVxyXG4gICAgfVxyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgQ2F0YWxvZztcclxuLy9leHBvcnQgZGVmYXVsdCBjb25uZWN0KG1hcFN0YXRlVG9Qcm9wcywgbWFwRGlzcGF0Y2hUb1Byb3BzKShDYXRhbG9nKTsiXX0= */\n/*@ sourceURL=pages\\product\\catalog.js */"
-      }));
-    }
-  }, {
-    key: "__reactstandin__regenerateByEval",
-    // @ts-ignore
-    value: function __reactstandin__regenerateByEval(key, code) {
-      // @ts-ignore
-      this[key] = eval(code);
-    }
-  }], [{
+  _createClass(Catalog, null, [{
     key: "getInitialProps",
     value: function () {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
-      __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(context) {
-        var res, data;
+      __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(_ref) {
+        var reduxStore, state, res, data;
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                console.log('initial props');
-                _context.next = 3;
+                reduxStore = _ref.reduxStore;
+                state = reduxStore.getState();
+
+                if (!(state.product.products.length > 0)) {
+                  _context.next = 5;
+                  break;
+                }
+
+                console.log('products from store');
+                return _context.abrupt("return", {
+                  products: state.product.products
+                });
+
+              case 5:
+                _context.next = 7;
                 return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["c" /* PRODUCTS */] + 'getAll', {
                   method: 'GET'
                 });
 
-              case 3:
+              case 7:
                 res = _context.sent;
-                _context.next = 6;
+                _context.next = 10;
                 return res.json();
 
-              case 6:
+              case 10:
                 data = _context.sent;
+                console.log('products from API');
                 return _context.abrupt("return", {
                   products: data.products
                 });
 
-              case 8:
+              case 13:
               case "end":
                 return _context.stop();
             }
@@ -4558,26 +4491,118 @@ function (_React$Component) {
     }()
   }]);
 
+  function Catalog(props) {
+    var _this;
+
+    _classCallCheck(this, Catalog);
+
+    _this = _possibleConstructorReturn(this, (Catalog.__proto__ || Object.getPrototypeOf(Catalog)).call(this));
+
+    if (props.uploadedProducts.length === 0) {
+      props.uploadProducts(props.products);
+    }
+
+    return _this;
+  }
+
+  _createClass(Catalog, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h3", {
+        align: "center",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        className: "jsx-385362788"
+      }, "Catalog"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        className: "jsx-385362788"
+      }, this.props.products.map(function (product) {
+        return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("div", {
+          key: product._id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
+          },
+          className: "jsx-385362788" + " " + "productWrapper"
+        }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("img", {
+          src: product.image,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
+          },
+          className: "jsx-385362788" + " " + "productImage"
+        }), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38
+          },
+          className: "jsx-385362788"
+        }, product.title), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
+          align: "center",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+          },
+          className: "jsx-385362788"
+        }, product.price, "$"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_next_link___default.a, {
+          href: "/product/view?id=".concat(product._id),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          }
+        }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41
+          },
+          className: "jsx-385362788" + " " + "forwardP"
+        }, "Forward")));
+      })), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_styled_jsx_style___default.a, {
+        styleId: "385362788",
+        css: ".forwardP.jsx-385362788{color:green;font-size:20px;text-align:center;cursor:pointer;}.productWrapper.jsx-385362788{vertical-align:top;border:1px solid #cacaca;background:#f8f1ff;margin:20px 10px 20px 10px;padding:10px;position:static;display:inline-block;border-radius:15px;width:20%;min-height:200px;min-width:200px;}.productImage.jsx-385362788{background-repeat:no-repeat;width:100%;height:auto;max-width:200px;height:200px;}.btnForward.jsx-385362788{width:30px;height:30px;background:transparent;border:none;cursor:pointer;background-size:100%;background-size:30px auto;background-repeat:no-repeat;margin-left:65%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwcm9kdWN0XFxjYXRhbG9nLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZDNEIsQUFHNkIsQUFNTyxBQWFTLEFBT2pCLFdBQ0MsQ0ExQkcsT0FNVSxJQXFCRixJQTFCTCxDQWtCUCxXQUNDLEtBYk8sQ0FMSixDQTBCSCxLQVBJLE9BUUQsRUExQm5CLEdBSytCLElBY2QsTUFRUSxPQVB6QixVQWRpQixJQXNCYSxTQXJCVixnQkFDSyxDQXFCTyxvQkFwQlQsUUFxQkgsV0FwQk4sS0FxQmQsS0FwQnFCLGlCQUNELGdCQUNwQiIsImZpbGUiOiJwYWdlc1xccHJvZHVjdFxcY2F0YWxvZy5qcyIsInNvdXJjZVJvb3QiOiJFOlxcUHJvamVjdHNcXHNlcmhpaVxcbmV4dGpzLXByb2plY3QiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvbGF5b3V0JztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7QVBJX1VSTCwgUFJPRFVDVFN9IGZyb20gXCIuLi8uLi9hc3NldHMvY29uZmlnL2FwaVwiO1xyXG5pbXBvcnQge3VwbG9hZFByb2R1Y3RzfSBmcm9tIFwiLi4vLi4vcmVkdXgvYWN0aW9ucy9wcm9kdWN0XCI7XHJcbmltcG9ydCB7Y29ubmVjdH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuXHJcbmNsYXNzIENhdGFsb2cgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7cmVkdXhTdG9yZX0pe1xyXG4gICAgICAgIGNvbnN0IHN0YXRlID0gcmVkdXhTdG9yZS5nZXRTdGF0ZSgpO1xyXG4gICAgICAgIGlmKHN0YXRlLnByb2R1Y3QucHJvZHVjdHMubGVuZ3RoID4gMCl7XHJcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdwcm9kdWN0cyBmcm9tIHN0b3JlJyk7XHJcbiAgICAgICAgICAgIHJldHVybiB7cHJvZHVjdHM6IHN0YXRlLnByb2R1Y3QucHJvZHVjdHN9O1xyXG4gICAgICAgIH1cclxuICAgICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChBUElfVVJMICsgUFJPRFVDVFMgKyAnZ2V0QWxsJywge21ldGhvZDogJ0dFVCd9KTtcclxuICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcclxuICAgICAgICBjb25zb2xlLmxvZygncHJvZHVjdHMgZnJvbSBBUEknKTtcclxuICAgICAgICByZXR1cm4ge3Byb2R1Y3RzOiBkYXRhLnByb2R1Y3RzfTtcclxuICAgIH1cclxuXHJcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcyl7XHJcbiAgICAgICAgc3VwZXIoKTtcclxuICAgICAgICBpZihwcm9wcy51cGxvYWRlZFByb2R1Y3RzLmxlbmd0aCA9PT0gMCl7XHJcbiAgICAgICAgICAgIHByb3BzLnVwbG9hZFByb2R1Y3RzKHByb3BzLnByb2R1Y3RzKTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcbiAgICAgICAgcmV0dXJuKFxyXG4gICAgICAgICAgICA8TGF5b3V0PlxyXG4gICAgICAgICAgICAgICAgPGgzIGFsaWduPVwiY2VudGVyXCI+Q2F0YWxvZzwvaDM+XHJcbiAgICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICAgICAge3RoaXMucHJvcHMucHJvZHVjdHMubWFwKChwcm9kdWN0KSA9PiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicHJvZHVjdFdyYXBwZXJcIiBrZXk9e3Byb2R1Y3QuX2lkfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwicHJvZHVjdEltYWdlXCIgc3JjPXtwcm9kdWN0LmltYWdlfS8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDYgYWxpZ249XCJjZW50ZXJcIj57cHJvZHVjdC50aXRsZX08L2g2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGFsaWduPVwiY2VudGVyXCI+e3Byb2R1Y3QucHJpY2V9JDwvaDY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL3Byb2R1Y3Qvdmlldz9pZD0ke3Byb2R1Y3QuX2lkfWB9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvcndhcmRQXCI+Rm9yd2FyZDwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgKSl9XHJcbiAgICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgICAuZm9yd2FyZFAge1xyXG4gICAgICAgICAgICAgICAgY29sb3I6IGdyZWVuO1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5wcm9kdWN0V3JhcHBlcntcclxuICAgICAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XHJcbiAgICAgICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2FjYWNhO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZDogI2Y4ZjFmZjtcclxuICAgICAgICAgICAgICAgIG1hcmdpbjogMjBweCAxMHB4IDIwcHggMTBweDtcclxuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICAgICAgICAgICAgICBwb3NpdGlvbjogc3RhdGljO1xyXG4gICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiAyMCU7XHJcbiAgICAgICAgICAgICAgICBtaW4taGVpZ2h0OiAyMDBweDtcclxuICAgICAgICAgICAgICAgIG1pbi13aWR0aDogMjAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLnByb2R1Y3RJbWFnZSB7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICAgICAgICAgICAgICBtYXgtd2lkdGg6IDIwMHB4O1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAuYnRuRm9yd2FyZCB7XHJcbiAgICAgICAgICAgICAgICB3aWR0aDogMzBweDtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogMzBweDtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAzMHB4IGF1dG87XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDY1JTtcclxuICAgICAgICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG4gICAgICAgICAgICA8L0xheW91dD5cclxuICAgICAgICApO1xyXG4gICAgfVxyXG59XHJcblxyXG5jb25zdCBtYXBTdGF0ZVRvUHJvcHMgPSBzdGF0ZSA9PiB7XHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIHVwbG9hZGVkUHJvZHVjdHM6IHN0YXRlLnByb2R1Y3QucHJvZHVjdHNcclxuICAgIH1cclxufTtcclxuXHJcbmNvbnN0IG1hcERpc3BhdGNoVG9Qcm9wcyA9IGRpc3BhdGNoID0+IHtcclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgdXBsb2FkUHJvZHVjdHM6IHByb2R1Y3RzID0+IGRpc3BhdGNoKHVwbG9hZFByb2R1Y3RzKHByb2R1Y3RzKSlcclxuICAgIH1cclxufTtcclxuXHJcbi8vZXhwb3J0IGRlZmF1bHQgQ2F0YWxvZztcclxuZXhwb3J0IGRlZmF1bHQgY29ubmVjdChtYXBTdGF0ZVRvUHJvcHMsIG1hcERpc3BhdGNoVG9Qcm9wcykoQ2F0YWxvZyk7Il19 */\n/*@ sourceURL=pages\\product\\catalog.js */"
+      }));
+    }
+  }, {
+    key: "__reactstandin__regenerateByEval",
+    // @ts-ignore
+    value: function __reactstandin__regenerateByEval(key, code) {
+      // @ts-ignore
+      this[key] = eval(code);
+    }
+  }]);
+
   return Catalog;
 }(__WEBPACK_IMPORTED_MODULE_8_react___default.a.Component);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    products: state.product.products
+    uploadedProducts: state.product.products
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     uploadProducts: function uploadProducts(products) {
-      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_6__redux_actions_product__["b" /* uploadProducts */])(products));
+      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_6__redux_actions_product__["a" /* uploadProducts */])(products));
     }
   };
-};
+}; //export default Catalog;
 
-var _default = Catalog;
-/* harmony default export */ __webpack_exports__["default"] = (_default); //export default connect(mapStateToProps, mapDispatchToProps)(Catalog);
 
+var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect */])(mapStateToProps, mapDispatchToProps)(Catalog);
+
+/* harmony default export */ __webpack_exports__["default"] = (_default);
 ;
 
 (function () {
@@ -4623,8 +4648,8 @@ var _default = Catalog;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return setCount; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return uploadProducts; });
+/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export setCount */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return uploadProducts; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;

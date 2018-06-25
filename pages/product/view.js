@@ -8,6 +8,7 @@ import Link from 'next/link';
 
 class View extends React.Component {
     static async getInitialProps(context) {
+        console.log('initial view props');
         const res = await fetch(API_URL + PRODUCTS + 'getById', {
             method: 'POST',
             body: JSON.stringify({id: context.query.id}),
@@ -22,7 +23,7 @@ class View extends React.Component {
     constructor(props) {
         console.log('product state', props.productState);
         super();
-        const product = props.productState.find((obj) => obj.id === props.product._id)
+        const product = props.productState.find((obj) => obj.id === props.product._id);
         this.state = {
             localCount: product === undefined ? 0 : product.count
         };
@@ -103,5 +104,6 @@ const mapDispatchToProps = dispatch => {
         order: productCount => dispatch(setCount(productCount))
     }
 };
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(View);

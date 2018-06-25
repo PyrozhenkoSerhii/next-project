@@ -8,7 +8,11 @@ function getOrCreateStore(initialState){
     if(isServer){
         return initializeStore(initialState);
     }
-    return window[REDUX_STORE] = initializeStore(initialState);
+    if(!window[REDUX_STORE]){
+        window[REDUX_STORE] = initializeStore(initialState);
+    }
+
+    return window[REDUX_STORE];
 }
 
 export default (App) => {
@@ -30,8 +34,7 @@ export default (App) => {
         }
         constructor(props){
             super(props);
-            // this.reduxStore = getOrCreateStore(props.initialReduxState);
-            this.reduxStore = initializeStore(props.initialReduxState);
+            this.reduxStore = getOrCreateStore(props.initialReduxState);
         }
 
         render(){
@@ -40,4 +43,6 @@ export default (App) => {
             );
         }
     }
+
+
 }

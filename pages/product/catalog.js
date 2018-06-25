@@ -8,11 +8,23 @@ import React from 'react';
 
 
 class Catalog extends React.Component {
-    static async getInitialProps(context){
-        console.log('initial props');
+    static async getInitialProps({reduxStore}){
+        const state = reduxStore.getState();
+        if(state.product.products.length > 0){
+            console.log('products from store');
+            return {products: state.product.products};
+        }
         const res = await fetch(API_URL + PRODUCTS + 'getAll', {method: 'GET'});
         const data = await res.json();
+        console.log('products from API');
         return {products: data.products};
+    }
+
+    constructor(props){
+        super();
+        if(props.uploadedProducts.length === 0){
+            props.uploadProducts(props.products);
+        }
     }
 
     render(){
@@ -77,7 +89,7 @@ class Catalog extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        products: state.product.products
+        uploadedProducts: state.product.products
     }
 };
 
@@ -87,5 +99,5 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default Catalog;
-//export default connect(mapStateToProps, mapDispatchToProps)(Catalog);
+//export default Catalog;
+export default connect(mapStateToProps, mapDispatchToProps)(Catalog);

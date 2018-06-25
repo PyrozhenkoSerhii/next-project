@@ -10,7 +10,8 @@ export default function productReducer(state = initialState, action) {
         case SET_COUNT:
             return {...state, productState: [...state.productState, action.payload]};
         case UPLOAD_PRODUCTS:
-            return {...state, products: [action.payload]};
+            console.log('payload', action.payload);
+            return {...state, products: action.payload};
         default:
             return state;
     }
