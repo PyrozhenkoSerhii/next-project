@@ -2592,8 +2592,9 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_1__redux_wrapper__["a" /* defaul
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return clockTypes; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return clockTypes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SET_COUNT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return UPLOAD_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SAVE_USER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SAVE_TOKEN; });
 (function () {
@@ -2609,6 +2610,7 @@ var clockTypes = {
   RESET: 'RESET'
 };
 var SET_COUNT = 'SET_COUNT';
+var UPLOAD_PRODUCTS = 'UPLOAD_PRODUCTS';
 var SAVE_USER = 'SAVE_USER';
 var SAVE_TOKEN = 'SAVE_TOKEN';
 ;
@@ -2624,6 +2626,7 @@ var SAVE_TOKEN = 'SAVE_TOKEN';
 
   reactHotLoader.register(clockTypes, "clockTypes", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SET_COUNT, "SET_COUNT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(UPLOAD_PRODUCTS, "UPLOAD_PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_USER, "SAVE_USER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_TOKEN, "SAVE_TOKEN", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   leaveModule(module);
@@ -2698,7 +2701,7 @@ function reducer() {
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* clockTypes */].TICK:
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* clockTypes */].TICK:
       return Object.assign({}, state, {
         lastUpdate: action.ts,
         light: !!action.light
@@ -2755,7 +2758,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 var initialState = {
-  productState: []
+  productState: [],
+  products: []
 };
 function productReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -2765,6 +2769,11 @@ function productReducer() {
     case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* SET_COUNT */]:
       return _objectSpread({}, state, {
         productState: _toConsumableArray(state.productState).concat([action.payload])
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* UPLOAD_PRODUCTS */]:
+      return _objectSpread({}, state, {
+        products: [action.payload]
       });
 
     default:

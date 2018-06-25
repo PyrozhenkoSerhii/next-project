@@ -2,23 +2,36 @@ import Layout from '../../components/layout';
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
 import {API_URL, PRODUCTS} from "../../assets/config/api";
+import {uploadProducts} from "../../redux/actions/product";
+import {connect} from 'react-redux';
+import React from 'react';
 
-const Catalog = (props) => (
-    <Layout>
-        <h3 align="center">Catalog</h3>
-        <ul>
-            {props.products.map((product) => (
-                <div className="productWrapper" key={product._id}>
-                    <img className="productImage" src={product.image}/>
-                    <h6 align="center">{product.title}</h6>
-                    <h6 align="center">{product.price}$</h6>
-                    <Link href={`/product/view?id=${product._id}`}>
-                        <p className="forwardP">Forward</p>
-                    </Link>
-                </div>
-            ))}
-        </ul>
-        <style jsx>{`
+
+class Catalog extends React.Component {
+    static async getInitialProps(context){
+        console.log('initial props');
+        const res = await fetch(API_URL + PRODUCTS + 'getAll', {method: 'GET'});
+        const data = await res.json();
+        return {products: data.products};
+    }
+
+    render(){
+        return(
+            <Layout>
+                <h3 align="center">Catalog</h3>
+                <ul>
+                    {this.props.products.map((product) => (
+                        <div className="productWrapper" key={product._id}>
+                            <img className="productImage" src={product.image}/>
+                            <h6 align="center">{product.title}</h6>
+                            <h6 align="center">{product.price}$</h6>
+                            <Link href={`/product/view?id=${product._id}`}>
+                                <p className="forwardP">Forward</p>
+                            </Link>
+                        </div>
+                    ))}
+                </ul>
+                <style jsx>{`
             .forwardP {
                 color: green;
                 font-size: 20px;
@@ -57,13 +70,22 @@ const Catalog = (props) => (
                 margin-left: 65%;
             }
     `}</style>
-    </Layout>
-);
+            </Layout>
+        );
+    }
+}
 
-Catalog.getInitialProps = async function () {
-    const res = await fetch(API_URL + PRODUCTS + 'getAll', {method: 'GET'});
-    const data = await res.json();
-    return {products: data.products};
+const mapStateToProps = state => {
+    return {
+        products: state.product.products
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        uploadProducts: products => dispatch(uploadProducts(products))
+    }
 };
 
 export default Catalog;
+//export default connect(mapStateToProps, mapDispatchToProps)(Catalog);

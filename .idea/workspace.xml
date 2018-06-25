@@ -2,203 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f49ca5-6370-4bfa-affc-66bc4db510b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/0af8745b221b795fc2c6.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.2a014a6d08046fb58441.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.2a014a6d08046fb58441.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.4a4d2b474d329915b184.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.4a4d2b474d329915b184.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.c8feaa01ce66b74e9b33.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1.c8feaa01ce66b74e9b33.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/11c1db31c080123c0f8e.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1c323cd88610e367c250.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/1f61b3cdb63b7c21b5c2.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/237ca5cf40925b95c02f.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/2a014a6d08046fb58441.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/2b4f6408d6d2d94c96d9.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/2dc0c6828b9a3d1ec011.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/35850a56e97b8efc11fe.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/3a1cc7bb9c4606045389.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/3ae9471f6038ec40d035.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.0af8745b221b795fc2c6.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.0af8745b221b795fc2c6.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.11c1db31c080123c0f8e.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.11c1db31c080123c0f8e.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.1c323cd88610e367c250.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.1c323cd88610e367c250.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.237ca5cf40925b95c02f.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.237ca5cf40925b95c02f.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2a014a6d08046fb58441.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2a014a6d08046fb58441.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2b4f6408d6d2d94c96d9.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2b4f6408d6d2d94c96d9.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2dc0c6828b9a3d1ec011.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.2dc0c6828b9a3d1ec011.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.35850a56e97b8efc11fe.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.35850a56e97b8efc11fe.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.3a1cc7bb9c4606045389.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.3a1cc7bb9c4606045389.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.3ae9471f6038ec40d035.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.3ae9471f6038ec40d035.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.4a1fac926382f1d6c2d8.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.4a1fac926382f1d6c2d8.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.4c352e8d67f021c17228.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.4c352e8d67f021c17228.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.528a658e0ac3add9c735.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.528a658e0ac3add9c735.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.5ca81683388060f5f40d.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.5ca81683388060f5f40d.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.60a55536057272a2da04.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.60a55536057272a2da04.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.64b93e73f96a3e48a437.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.64b93e73f96a3e48a437.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.69328f127a8f46a5e276.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.69328f127a8f46a5e276.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.7aa84dae781f847b7afc.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.7aa84dae781f847b7afc.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.7f06d9f8d79df1b6d9a6.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.7f06d9f8d79df1b6d9a6.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.80c1fd41acdfd935ae13.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.80c1fd41acdfd935ae13.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.8395989907381f59dd03.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.8395989907381f59dd03.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.8a75d7d6ff8e106e6acd.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.8a75d7d6ff8e106e6acd.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.953507f9220bd0c5755f.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.953507f9220bd0c5755f.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.9d3aa7b42282095f222c.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.9d3aa7b42282095f222c.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.ac1cf29e37edd893686f.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.ac1cf29e37edd893686f.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.ae77001220e00bf281a6.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.ae77001220e00bf281a6.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.aef95082a9e2a4b1d04a.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.aef95082a9e2a4b1d04a.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.af4cd384d8846e65beb6.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.af4cd384d8846e65beb6.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.b883b7a02e7ed731ca84.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.b883b7a02e7ed731ca84.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.bf296e5a063990fb8d74.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.bf296e5a063990fb8d74.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.c65ce0665a46ba90e680.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.c65ce0665a46ba90e680.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.c8feaa01ce66b74e9b33.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.c8feaa01ce66b74e9b33.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.cc3d7aa40af47ef4e4a2.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.cc3d7aa40af47ef4e4a2.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d050d23f47a20b80da18.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d050d23f47a20b80da18.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d244793139a5eb6eacba.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d244793139a5eb6eacba.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d4d042bf797d93528882.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d4d042bf797d93528882.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d7b99b7a64e27934b902.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.d7b99b7a64e27934b902.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.dafa691ef73d9934a9a6.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.dafa691ef73d9934a9a6.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.de42886cbefda664462d.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.de42886cbefda664462d.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e5e5274c5e7014a590d1.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e5e5274c5e7014a590d1.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e627e6e9652de5da01fa.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e627e6e9652de5da01fa.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e6c6bf901aa8a58b8ccf.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.e6c6bf901aa8a58b8ccf.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.eaadbe986ad14c8c008b.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.eaadbe986ad14c8c008b.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.fa1f4389a511e40b5cbd.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.fa1f4389a511e40b5cbd.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.fb71f9ce1e1ffa8d92ff.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4.fb71f9ce1e1ffa8d92ff.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4a143d5f0464ecb1f732.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4a1fac926382f1d6c2d8.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4a4d2b474d329915b184.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/4c352e8d67f021c17228.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/5.c8feaa01ce66b74e9b33.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/5.c8feaa01ce66b74e9b33.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/528a658e0ac3add9c735.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/5ca81683388060f5f40d.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/6.bbe0d5c859d8ae58c3b1.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/6.bbe0d5c859d8ae58c3b1.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/6.c8feaa01ce66b74e9b33.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/6.c8feaa01ce66b74e9b33.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/606d330b4b61a4c88871.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/60a55536057272a2da04.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/64b93e73f96a3e48a437.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/677256c1ca6271ef2c99.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/69328f127a8f46a5e276.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/6afc2e96da99f5f97b29.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.1c323cd88610e367c250.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.1c323cd88610e367c250.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.606d330b4b61a4c88871.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.606d330b4b61a4c88871.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.6afc2e96da99f5f97b29.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.6afc2e96da99f5f97b29.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.92cf360260e72c9b058a.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.92cf360260e72c9b058a.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.fd5da6fd1b767d184839.hot-update.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7.fd5da6fd1b767d184839.hot-update.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7aa84dae781f847b7afc.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/7f06d9f8d79df1b6d9a6.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/802d7f559c6aad1c1355.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/80c1fd41acdfd935ae13.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/8395989907381f59dd03.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/8a75d7d6ff8e106e6acd.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/8ece6c9dcaaf1bcb0793.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/92cf360260e72c9b058a.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/953507f9220bd0c5755f.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/9d3aa7b42282095f222c.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/9f4fe7a43d3c9ff7acc8.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/a3bff79a15eceaec0239.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/a4e8816d535a81715797.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/ac1cf29e37edd893686f.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/ae77001220e00bf281a6.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/aef95082a9e2a4b1d04a.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/af4cd384d8846e65beb6.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/b883b7a02e7ed731ca84.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bbe0d5c859d8ae58c3b1.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bf296e5a063990fb8d74.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/user/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/user/login.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/bundles/pages/user/register.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/c65ce0665a46ba90e680.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/c8feaa01ce66b74e9b33.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/cc3d7aa40af47ef4e4a2.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/d050d23f47a20b80da18.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/d244793139a5eb6eacba.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/d4d042bf797d93528882.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/d7b99b7a64e27934b902.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dafa691ef73d9934a9a6.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/de42886cbefda664462d.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/df767a2008d128df402c.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/user/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/user/login.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/user/register.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/e5e5274c5e7014a590d1.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/e627e6e9652de5da01fa.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/e67e178aa1ad7c7b3dc5.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/e6c6bf901aa8a58b8ccf.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/eaadbe986ad14c8c008b.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/f5258694f9006f87c76f.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/fa1f4389a511e40b5cbd.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/fb71f9ce1e1ffa8d92ff.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.next/fd5da6fd1b767d184839.hot-update.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/about.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/build-manifest.json" afterPath="$PROJECT_DIR$/.next/build-manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_app.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_app.js.map" afterPath="$PROJECT_DIR$/.next/bundles/pages/_app.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/_error.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/_error.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/product/catalog.js" afterPath="$PROJECT_DIR$/.next/bundles/pages/product/catalog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/product/catalog.js.map" afterPath="$PROJECT_DIR$/.next/bundles/pages/product/catalog.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/product/order.js.map" afterPath="$PROJECT_DIR$/.next/bundles/pages/product/order.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/bundles/pages/product/view.js.map" afterPath="$PROJECT_DIR$/.next/bundles/pages/product/view.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_app.js" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_app.js.map" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_app.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_document.js" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_document.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_document.js.map" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_document.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_error.js" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_error.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/_error.js.map" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/_error.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/product/catalog.js" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/product/catalog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/bundles/pages/product/catalog.js.map" afterPath="$PROJECT_DIR$/.next/dist/bundles/pages/product/catalog.js.map" />
@@ -207,12 +21,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/dist/pages-manifest.json" afterPath="$PROJECT_DIR$/.next/dist/pages-manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/static/commons/manifest.js" afterPath="$PROJECT_DIR$/.next/static/commons/manifest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.next/static/commons/manifest.js.map" afterPath="$PROJECT_DIR$/.next/static/commons/manifest.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/navbar.js" afterPath="$PROJECT_DIR$/components/navbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/user/register.js" afterPath="$PROJECT_DIR$/components/user/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/_app.js" afterPath="$PROJECT_DIR$/pages/_app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product/catalog.js" afterPath="$PROJECT_DIR$/pages/product/catalog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product/order.js" afterPath="$PROJECT_DIR$/pages/product/order.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/product/view.js" afterPath="$PROJECT_DIR$/pages/product/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/costants/actionTypes.js" afterPath="$PROJECT_DIR$/redux/costants/actionTypes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/reducers/product.js" afterPath="$PROJECT_DIR$/redux/reducers/product.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/reduxInitializer.js" afterPath="$PROJECT_DIR$/redux/wrapper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/redux/actions/order.js" afterPath="$PROJECT_DIR$/redux/actions/product.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -226,16 +40,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redux/reducers/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="clock.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux/reducers/clock.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -249,20 +53,31 @@
       <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redux/reducers/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalog.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux/actions/product.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/product/catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="496">
+              <caret line="91" column="2" lean-forward="false" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
               <folding>
-                <element signature="e#795#2014#0" expanded="false" />
+                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#1336#2555#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -271,18 +86,18 @@
       <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/product/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state relative-caret-position="478">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="66" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -312,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/layout.js">
+      <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux/costants/actionTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -379,23 +194,24 @@
         <option value="$PROJECT_DIR$/redux/reducers/clock.js" />
         <option value="$PROJECT_DIR$/components/redux-test/example.js" />
         <option value="$PROJECT_DIR$/pages/index.js" />
-        <option value="$PROJECT_DIR$/redux/actions/order.js" />
-        <option value="$PROJECT_DIR$/pages/product/order.js" />
-        <option value="$PROJECT_DIR$/redux/costants/actionTypes.js" />
         <option value="$PROJECT_DIR$/redux/actions/user.js" />
         <option value="$PROJECT_DIR$/redux/reducers/user.js" />
         <option value="$PROJECT_DIR$/redux/reducers/root.js" />
         <option value="$PROJECT_DIR$/assets/config/api.js" />
         <option value="$PROJECT_DIR$/components/user/login.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pages/product/catalog.js" />
         <option value="$PROJECT_DIR$/redux/actions/clock.js" />
         <option value="$PROJECT_DIR$/components/user/register.js" />
         <option value="$PROJECT_DIR$/redux/reduxInitializer.js" />
         <option value="$PROJECT_DIR$/redux/wrapper.js" />
         <option value="$PROJECT_DIR$/components/navbar.js" />
+        <option value="$PROJECT_DIR$/pages/product/order.js" />
+        <option value="$PROJECT_DIR$/redux/actions/order.js" />
+        <option value="$PROJECT_DIR$/redux/costants/actionTypes.js" />
         <option value="$PROJECT_DIR$/redux/reducers/product.js" />
+        <option value="$PROJECT_DIR$/redux/actions/product.js" />
         <option value="$PROJECT_DIR$/pages/product/view.js" />
+        <option value="$PROJECT_DIR$/pages/product/catalog.js" />
       </list>
     </option>
   </component>
@@ -458,6 +274,18 @@
               <item name="nextjs-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="nextjs-project" type="462c0819:PsiDirectoryNode" />
               <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nextjs-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nextjs-project" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nextjs-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nextjs-project" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="costants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nextjs-project" type="b2602c69:ProjectViewProjectNode" />
@@ -555,12 +383,12 @@
       <workItem from="1529569040310" duration="18679000" />
       <workItem from="1529653426924" duration="18733000" />
       <workItem from="1529739976471" duration="18608000" />
-      <workItem from="1529912337608" duration="6049000" />
+      <workItem from="1529912337608" duration="8639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62069000" />
+    <option name="totallyTimeSpent" value="64659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -575,12 +403,13 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20084439" sideWeight="0.73582476" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20084439" sideWeight="0.7368421" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20084439" sideWeight="0.26417527" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13101904" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20084439" sideWeight="0.2631579" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28667414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32026875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -590,7 +419,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -662,8 +490,7 @@
         <state relative-caret-position="252">
           <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="60" />
           <folding>
-            <element signature="e#0#45#0" expanded="false" />
-            <element signature="e#795#2014#0" expanded="false" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,6 +570,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/actions/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/redux-test/clock.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -804,6 +625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,14 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/costants/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -918,24 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/product/catalog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#795#2014#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/product/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux/reducers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -978,20 +774,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redux/actions/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/costants/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redux/reducers/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/product/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/product/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state relative-caret-position="478">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="66" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/product/catalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="91" column="2" lean-forward="false" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#1336#2555#0" expanded="false" />
           </folding>
         </state>
       </provider>

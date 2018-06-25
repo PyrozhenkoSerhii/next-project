@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import fetch from 'isomorphic-unfetch';
 import {API_URL, PRODUCTS} from "../../assets/config/api";
 import React from 'react';
-import {setCount} from '../../redux/actions/order';
+import {setCount} from '../../redux/actions/product';
 import {connect} from "react-redux";
 import Link from 'next/link';
 
@@ -91,14 +91,17 @@ class View extends React.Component {
     }
 }
 
+
+const mapStateToProps = state => {
+    return {
+        productState: state.product.productState
+    }
+};
+
 const mapDispatchToProps = dispatch => {
     return {
         order: productCount => dispatch(setCount(productCount))
     }
-};
-
-const mapStateToProps = state => {
-    return {productState: state.product.productState}
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(View);
