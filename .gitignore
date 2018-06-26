@@ -1,4 +1,8 @@
-.gitignore
-/node_modules
-/.next
-/.idea
+# Build Output
+dist
+.next
+.idea
+
+# Dependencies
+node_modules/
+package-lock.json
