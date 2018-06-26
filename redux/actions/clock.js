@@ -1,6 +1,5 @@
 import {clockTypes} from '../costants/actionTypes';
 
-
 // todo: rework async actions
 export const serverRenderClock = (isServer) => dispatch => {
     return dispatch({ type: clockTypes.TICK, light: !isServer, ts: Date.now() })

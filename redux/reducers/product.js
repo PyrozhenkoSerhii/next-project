@@ -1,4 +1,4 @@
-import {UPLOAD_PRODUCTS, SET_COUNT} from "../costants/actionTypes";
+import {DELETE_FROM_ORDER, UPLOAD_PRODUCTS, ORDER_PRODUCT, UPDATE_ORDER} from "../costants/actionTypes";
 
 const initialState = {
     productState: [],
@@ -7,11 +7,15 @@ const initialState = {
 
 export default function productReducer(state = initialState, action) {
     switch (action.type) {
-        case SET_COUNT:
+        case ORDER_PRODUCT:
             return {...state, productState: [...state.productState, action.payload]};
+        case UPDATE_ORDER:
+            const newState = state.productState.filter(el => el.id !== action.payload.id);
+            return {...state, productState: [...newState, action.payload]};
         case UPLOAD_PRODUCTS:
-            console.log('payload', action.payload);
             return {...state, products: action.payload};
+        case DELETE_FROM_ORDER:
+            return {...state, productState: state.productState.filter(el => el.id !== action.payload)};
         default:
             return state;
     }

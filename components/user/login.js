@@ -37,6 +37,7 @@ class Login extends React.Component {
                 if (response.data.success) {
                     this.props.saveUser(response.data.customer);
                     this.props.saveToken(response.data.token);
+                    localStorage.setItem('token', response.data.token);
                     this.setState({
                         redirect: true,
                     });

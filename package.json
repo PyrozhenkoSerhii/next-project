@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build",
     "dev": "node server.js"
   },
@@ -23,6 +23,7 @@
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0"
   }
 }

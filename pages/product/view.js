@@ -2,7 +2,7 @@ import Layout from '../../components/layout';
 import fetch from 'isomorphic-unfetch';
 import {API_URL, PRODUCTS} from "../../assets/config/api";
 import React from 'react';
-import {setCount} from '../../redux/actions/product';
+import {orderProduct, updateOrder} from '../../redux/actions/product';
 import {connect} from "react-redux";
 import Link from 'next/link';
 
@@ -45,11 +45,15 @@ class View extends React.Component {
         })
     };
     orderProduct = () => {
-        const productState = {id: this.props.product._id, count: this.state.localCount};
-        this.props.order(productState);
-        this.setState({
-            localCount: 0
-        })
+        const productId = this.props.product._id;
+        const productState = {id: productId, count: this.state.localCount};
+        // console.log(this.props.productState);
+        // console.log(this.props.productState.filter(el => el.id === productId).length);
+        if(this.props.productState.some(el => el.id === productId)){
+            this.props.update(productState);
+        }else{
+            this.props.order(productState);
+        }
     };
 
 
@@ -86,7 +90,6 @@ class View extends React.Component {
                         height: 30px;
                     }
                 `}</style>
-
             </Layout>
         );
     }
@@ -101,7 +104,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        order: productCount => dispatch(setCount(productCount))
+        order: product => dispatch(orderProduct(product)),
+        update: product => dispatch(updateOrder(product))
     }
 };
 

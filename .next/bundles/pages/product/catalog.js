@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/product/catalog', function() {
           var comp = 
-      webpackJsonp([4],{
+      webpackJsonp([5],{
 
 /***/ "./assets/config/api.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -131,6 +131,7 @@ var _default = Layout;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("./node_modules/next/link.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
 var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js";
 
 
@@ -140,139 +141,250 @@ var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js"
   enterModule && enterModule(module);
 })();
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
-var Navbar = function Navbar() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
+
+
+
+var Navbar =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Navbar, _Component);
+
+  function Navbar() {
+    var _ref;
+
+    var _temp, _this;
+
+    _classCallCheck(this, Navbar);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "navbar navbar-expand-lg fixed-top navbar-dark bg-primary",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "logout", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function value() {
+        localStorage.clear();
+      }
+    }), _temp));
+  }
+
+  _createClass(Navbar, [{
+    key: "render",
+    // loggedIn = () => {
+    //     return token = localStorage.getItem(token) !== undefined;
+    // };
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: "navbar navbar-expand-lg fixed-top navbar-dark bg-primary",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: "container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "navbar-brand",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      }, "Next.js Project")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#navbarResponsive",
+        "aria-controls": "navbarResponsive",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+        className: "navbar-toggler-icon",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        }
+      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarResponsive",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+        className: "navbar-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        }
+      }, !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        prefetch: true,
+        href: "/product/catalog",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        }
+      }, "Catalog"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/product/order",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        }
+      }, "Order"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/user/login",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        }
+      }, "Login"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/user/register",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        }
+      }, "Register"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+        className: "nav-link",
+        onClick: this.logout,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        }
+      }, "Register")))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        }
+      }));
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
+  }, {
+    key: "__reactstandin__regenerateByEval",
+    // @ts-ignore
+    value: function __reactstandin__regenerateByEval(key, code) {
+      // @ts-ignore
+      this[key] = eval(code);
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
+  }], [{
+    key: "getInitialProps",
+    value: function getInitialProps(_ref2) {
+      var req = _ref2.req;
+      var isServer = !!req;
+      var token = true;
+
+      if (!isServer) {
+        token = localStorage.getItem('token') !== undefined;
+      }
+
+      return {
+        authenticated: true
+      };
     }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "navbar-brand",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }, "Next.js Project")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "navbar-toggler",
-    type: "button",
-    "data-toggle": "collapse",
-    "data-target": "#navbarResponsive",
-    "aria-controls": "navbarResponsive",
-    "aria-expanded": "false",
-    "aria-label": "Toggle navigation",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
-    className: "navbar-toggler-icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    }
-  })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "collapse navbar-collapse",
-    id: "navbarResponsive",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
-    className: "navbar-nav",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/product/catalog",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    }
-  }, "Catalog"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/user/login",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    }
-  }, "Login"))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-    className: "nav-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/user/register",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    className: "nav-link",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, "Register"))))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    }
-  }));
+  }]);
+
+  return Navbar;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    userData: state.user
+  };
 };
 
 var _default = Navbar;
@@ -289,6 +401,7 @@ var _default = Navbar;
   }
 
   reactHotLoader.register(Navbar, "Navbar", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
   reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
   leaveModule(module);
 })();
@@ -4648,8 +4761,10 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export setCount */
+/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export orderProduct */
+/* unused harmony export updateOrder */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return uploadProducts; });
+/* unused harmony export remove */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
@@ -4658,16 +4773,28 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
 })();
 
 
-var setCount = function setCount(productCount) {
+var orderProduct = function orderProduct(product) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* SET_COUNT */],
-    payload: productCount
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* ORDER_PRODUCT */],
+    payload: product
+  };
+};
+var updateOrder = function updateOrder(product) {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPDATE_ORDER */],
+    payload: product
   };
 };
 var uploadProducts = function uploadProducts(products) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* UPLOAD_PRODUCTS */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["g" /* UPLOAD_PRODUCTS */],
     payload: products
+  };
+};
+var remove = function remove(id) {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["a" /* DELETE_FROM_ORDER */],
+    payload: id
   };
 };
 ;
@@ -4681,8 +4808,10 @@ var uploadProducts = function uploadProducts(products) {
     return;
   }
 
-  reactHotLoader.register(setCount, "setCount", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
+  reactHotLoader.register(orderProduct, "orderProduct", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
+  reactHotLoader.register(updateOrder, "updateOrder", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
   reactHotLoader.register(uploadProducts, "uploadProducts", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
+  reactHotLoader.register(remove, "remove", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
   leaveModule(module);
 })();
 
@@ -4695,11 +4824,14 @@ var uploadProducts = function uploadProducts(products) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return clockTypes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SET_COUNT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return UPLOAD_PRODUCTS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SAVE_USER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SAVE_TOKEN; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return clockTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ORDER_PRODUCT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPDATE_ORDER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return UPLOAD_PRODUCTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DELETE_FROM_ORDER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SAVE_USER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_TOKEN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LOGOUT; });
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -4712,10 +4844,13 @@ var clockTypes = {
   DECREMENT: 'DECREMENT',
   RESET: 'RESET'
 };
-var SET_COUNT = 'SET_COUNT';
+var ORDER_PRODUCT = 'ORDER_PRODUCT';
+var UPDATE_ORDER = 'UPDATE_ORDER';
 var UPLOAD_PRODUCTS = 'UPLOAD_PRODUCTS';
+var DELETE_FROM_ORDER = 'DELETE_FROM_ORDER';
 var SAVE_USER = 'SAVE_USER';
 var SAVE_TOKEN = 'SAVE_TOKEN';
+var LOGOUT = 'LOGOUT';
 ;
 
 (function () {
@@ -4728,10 +4863,13 @@ var SAVE_TOKEN = 'SAVE_TOKEN';
   }
 
   reactHotLoader.register(clockTypes, "clockTypes", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(SET_COUNT, "SET_COUNT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(ORDER_PRODUCT, "ORDER_PRODUCT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(UPDATE_ORDER, "UPDATE_ORDER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(UPLOAD_PRODUCTS, "UPLOAD_PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(DELETE_FROM_ORDER, "DELETE_FROM_ORDER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_USER, "SAVE_USER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_TOKEN, "SAVE_TOKEN", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(LOGOUT, "LOGOUT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
   leaveModule(module);
 })();
 
@@ -4740,7 +4878,7 @@ var SAVE_TOKEN = 'SAVE_TOKEN';
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/product/catalog.js");
@@ -4748,7 +4886,7 @@ module.exports = __webpack_require__("./pages/product/catalog.js");
 
 /***/ })
 
-},[3])
+},[4])
           return { page: comp.default }
         })
       ;
