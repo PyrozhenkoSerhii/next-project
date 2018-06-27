@@ -1,5 +1,5 @@
 import App from 'next/app'
-import initializeStore from './store';
+import initializeStore from './store/store';
 
 const isServer = typeof window === 'undefined';
 const REDUX_STORE = 'REDUX_STORE';

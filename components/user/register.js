@@ -2,14 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import {API_URL, CUSTOMERS} from '../../assets/config/api'
 import Router from 'next/router';
+import Link from 'next/link';
 
 import {FormGroup} from 'react-bootstrap';
 import {ControlLabel} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
 
 export default class Register extends React.Component {
-    constructor(props){
+    constructor(props) {
         super();
         this.state = {
             name: '',
@@ -52,16 +52,16 @@ export default class Register extends React.Component {
         return this.state.username.length > 2
             && this.state.password.length > 2
             && this.state.name.length > 2
-            && this.state.email.length > 2
-            && (this.state.age > 6 && this.state.age < 120)
+            && this.state.email.length > 4
+            && (this.state.age > 10 && this.state.age < 120)
             && this.state.password === this.state.rPassword;
     };
 
-    render(){
-        if(this.state.redirect){
+    render() {
+        if (this.state.redirect) {
             Router.push('/user/login');
         }
-        return(
+        return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="name" bsSize="large">
@@ -89,12 +89,18 @@ export default class Register extends React.Component {
                         <ControlLabel>Repeat password</ControlLabel>
                         <FormControl type="text" value={this.state.rPassword} onChange={this.handleChange}/>
                     </FormGroup>
-                    <Button disabled={!this.validateForm()} type="submit" className="btn btn-success">Register</Button>
+                    <button disabled={!this.validateForm()} type="submit" className="btn btn-success">Register</button>
+                    <Link href="/user/register">
+                        <a className="nav-link">Alrady have an account? Login</a>
+                    </Link>
                 </form>
                 <style jsx>{`
                     .span-error{
                         font-size: 10px;
                         color: red;
+                    }
+                    button{
+                        align: center;
                     }
                 `}</style>
             </div>
