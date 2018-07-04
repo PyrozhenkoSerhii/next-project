@@ -7,13 +7,14 @@ const handle = app.getRequestHandler();
 
 const axios = require('axios');
 
+// what about caching data?
 app.prepare().then(() => {
     const server = express();
 
-    async function getProducts(){
+    async function getProducts(callback) {
         return await axios.get('https://obscure-stream-46512.herokuapp.com/products/getAll')
             .then(response => {
-                return response.data.products;
+                return callback(response.data.products);
             })
             .catch(error => {
                 console.error('Error while fetching products', error);
@@ -29,9 +30,10 @@ app.prepare().then(() => {
 
     server.get('/product/catalog', (req, res) => {
         console.log('catalog data...')
-        console.log(getProducts());
-        const serverData = { products: getProducts() };
-        app.render(req, res, '/product/catalog', { serverData });
+        getProducts((products) => {
+            const serverData = { products: products };
+            app.render(req, res, '/product/catalog', { serverData });
+        })
     });
 
     server.get('*', (req, res) => {
@@ -43,3 +45,5 @@ app.prepare().then(() => {
         console.log('> Ready on http://localhost:3000')
     });
 })
+
+

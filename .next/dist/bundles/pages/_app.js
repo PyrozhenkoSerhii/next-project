@@ -109,23 +109,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// import App, {Container} from 'next/app';
-// import {Provider} from 'react-redux'
-// import React from 'react';
-// import withReduxStore from '../redux/wrapper';
-// class MyApp extends App {
-//     render() {
-//         const {Component, pageProps, reduxStore} = this.props;
-//         return (
-//             <Container>
-//                 <Pr  ovider store={reduxStore}>
-//                     <Component {...pageProps}/>
-//                 </Provider>
-//             </Container>
-//         );
-//     }
-// }
-// export default withReduxStore(MyApp);
 
 
 
@@ -152,18 +135,18 @@ function (_App) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_next_app__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 16
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 17
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Component, _extends({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 18
         }
       }))));
     }
