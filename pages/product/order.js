@@ -1,7 +1,6 @@
 import {Component} from 'react';
 import {connect} from 'react-redux'
 import Layout from "../../components/layout";
-import {startClock} from "../../redux/actions/clock";
 import {remove} from "../../redux/actions/product";
 import Link from 'next/link'
 
@@ -111,8 +110,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        remove: (id) => dispatch(remove(id))
+        remove: id => dispatch(remove(id))
     }
 };
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(Order);

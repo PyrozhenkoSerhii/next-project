@@ -68,7 +68,6 @@ export default class Register extends React.Component {
                         <ControlLabel>Name</ControlLabel>
                         <FormControl type="text" value={this.state.name} onChange={this.handleChange}/>
                     </FormGroup>
-
                     <FormGroup controlId="username" bsSize="large">
                         <ControlLabel>Username</ControlLabel>
                         <FormControl type="text" value={this.state.username} onChange={this.handleChange}/>

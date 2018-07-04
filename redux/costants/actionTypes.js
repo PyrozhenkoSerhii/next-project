@@ -1,10 +1,3 @@
-export const clockTypes = {
-    TICK: 'TICK',
-    INCREMENT: 'INCREMENT',
-    DECREMENT: 'DECREMENT',
-    RESET: 'RESET'
-};
-
 export const ORDER_PRODUCT = 'ORDER_PRODUCT';
 export const UPDATE_ORDER = 'UPDATE_ORDER';
 export const UPLOAD_PRODUCTS = 'UPLOAD_PRODUCTS';

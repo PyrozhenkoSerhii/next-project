@@ -8,7 +8,6 @@ import Link from 'next/link';
 
 class View extends React.Component {
     static async getInitialProps(context) {
-        console.log('initial view props');
         const res = await fetch(API_URL + PRODUCTS + 'getById', {
             method: 'POST',
             body: JSON.stringify({id: context.query.id}),
@@ -47,8 +46,6 @@ class View extends React.Component {
     orderProduct = () => {
         const productId = this.props.product._id;
         const productState = {id: productId, count: this.state.localCount};
-        // console.log(this.props.productState);
-        // console.log(this.props.productState.filter(el => el.id === productId).length);
         if(this.props.productState.some(el => el.id === productId)){
             this.props.update(productState);
         }else{

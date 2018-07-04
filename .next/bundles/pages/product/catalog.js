@@ -2,15 +2,15 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/product/catalog', function() {
           var comp = 
-      webpackJsonp([5],{
+      webpackJsonp([4],{
 
 /***/ "./assets/config/api.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_URL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PRODUCTS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CUSTOMERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PRODUCTS; });
+/* unused harmony export CUSTOMERS */
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -31,9 +31,9 @@ var CUSTOMERS = 'customers/';
     return;
   }
 
-  reactHotLoader.register(API_URL, "API_URL", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
-  reactHotLoader.register(PRODUCTS, "PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
-  reactHotLoader.register(CUSTOMERS, "CUSTOMERS", "E:\\Projects\\serhii\\nextjs-project\\assets\\config\\api.js");
+  reactHotLoader.register(API_URL, "API_URL", "E:\\Projects\\serhii\\nextjs-redux-project\\assets\\config\\api.js");
+  reactHotLoader.register(PRODUCTS, "PRODUCTS", "E:\\Projects\\serhii\\nextjs-redux-project\\assets\\config\\api.js");
+  reactHotLoader.register(CUSTOMERS, "CUSTOMERS", "E:\\Projects\\serhii\\nextjs-redux-project\\assets\\config\\api.js");
   leaveModule(module);
 })();
 
@@ -51,7 +51,10 @@ var CUSTOMERS = 'customers/';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("./node_modules/next/head.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar__ = __webpack_require__("./components/navbar.js");
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\layout.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__ = __webpack_require__("./node_modules/next-redux-wrapper/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__redux_store__ = __webpack_require__("./redux/store.js");
+var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\components\\layout.js";
 
 
 (function () {
@@ -63,45 +66,49 @@ var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\layout.js"
 
 
 
+
+
 var Layout = function Layout(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     }
   }, "Next project"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://bootswatch.com/4/cerulean/bootstrap.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     }
   })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__navbar__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     }
   }, props.children));
 };
 
-var _default = Layout;
+var _default = __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_4__redux_store__["a" /* default */], null, null)(Layout);
+
 /* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 ;
 
 (function () {
@@ -113,8 +120,8 @@ var _default = Layout;
     return;
   }
 
-  reactHotLoader.register(Layout, "Layout", "E:\\Projects\\serhii\\nextjs-project\\components\\layout.js");
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\components\\layout.js");
+  reactHotLoader.register(Layout, "Layout", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\layout.js");
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\layout.js");
   leaveModule(module);
 })();
 
@@ -132,7 +139,7 @@ var _default = Layout;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("./node_modules/next/link.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js";
+var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js";
 
 
 (function () {
@@ -400,9 +407,9 @@ var _default = Navbar;
     return;
   }
 
-  reactHotLoader.register(Navbar, "Navbar", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\components\\navbar.js");
+  reactHotLoader.register(Navbar, "Navbar", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
   leaveModule(module);
 })();
 
@@ -415,6 +422,72 @@ var _default = Navbar;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/core-js/library/fn/json/stringify.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Object$assign = __webpack_require__("./node_modules/@babel/runtime/core-js/object/assign.js");
+
+function _extends() {
+  module.exports = _extends = _Object$assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Object$getOwnPropertySymbols = __webpack_require__("./node_modules/@babel/runtime/core-js/object/get-own-property-symbols.js");
+
+var _Object$keys = __webpack_require__("./node_modules/@babel/runtime/core-js/object/keys.js");
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+
+  var sourceKeys = _Object$keys(source);
+
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  if (_Object$getOwnPropertySymbols) {
+    var sourceSymbolKeys = _Object$getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutProperties;
 
 /***/ }),
 
@@ -1380,6 +1453,231 @@ function isPlainObject(value) {
 
 /* harmony default export */ __webpack_exports__["a"] = (isPlainObject);
 
+
+/***/ }),
+
+/***/ "./node_modules/next-redux-wrapper/lib/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireWildcard = __webpack_require__("./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__("./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = exports.setPromise = void 0;
+
+var _regenerator = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/regenerator/index.js"));
+
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
+
+var _extends2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/extends.js"));
+
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
+
+var _getPrototypeOf = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/core-js/object/get-prototype-of.js"));
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/createClass.js"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/inherits.js"));
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/objectSpread.js"));
+
+var _promise = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/core-js/promise.js"));
+
+var _react = _interopRequireWildcard(__webpack_require__("./node_modules/react/cjs/react.development.js"));
+
+var _Promise = _promise.default;
+var _debug = false;
+var DEFAULT_KEY = '__NEXT_REDUX_STORE__';
+var isServer = typeof window === 'undefined';
+
+var setPromise = function setPromise(Promise) {
+  return _Promise = Promise;
+};
+/**
+ * @param makeStore
+ * @param initialState
+ * @param config
+ * @param ctx
+ * @return {{getState: function, dispatch: function}}
+ */
+
+
+exports.setPromise = setPromise;
+
+var initStore = function initStore(_ref) {
+  var makeStore = _ref.makeStore,
+      initialState = _ref.initialState,
+      config = _ref.config,
+      _ref$ctx = _ref.ctx,
+      ctx = _ref$ctx === void 0 ? {} : _ref$ctx;
+  var storeKey = config.storeKey;
+
+  var createStore = function createStore() {
+    return makeStore(config.deserializeState(initialState), (0, _objectSpread2.default)({}, ctx, config, {
+      isServer: isServer
+    }));
+  };
+
+  if (isServer) return createStore(); // Memoize store if client
+
+  if (!window[storeKey]) {
+    window[storeKey] = createStore();
+  }
+
+  return window[storeKey];
+};
+/**
+ * @param makeStore
+ * @param config
+ * @return {function(App): {getInitialProps, new(): WrappedApp, prototype: WrappedApp}}
+ */
+
+
+var _default = function _default(makeStore) {
+  var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  config = (0, _objectSpread2.default)({
+    storeKey: DEFAULT_KEY,
+    debug: _debug,
+    serializeState: function serializeState(state) {
+      return state;
+    },
+    deserializeState: function deserializeState(state) {
+      return state;
+    }
+  }, config);
+  return function (App) {
+    var _class, _temp;
+
+    return _temp = _class =
+    /*#__PURE__*/
+    function (_Component) {
+      (0, _inherits2.default)(WrappedApp, _Component);
+
+      function WrappedApp(props, context) {
+        var _this;
+
+        (0, _classCallCheck2.default)(this, WrappedApp);
+        _this = (0, _possibleConstructorReturn2.default)(this, (WrappedApp.__proto__ || (0, _getPrototypeOf.default)(WrappedApp)).call(this, props, context));
+        var initialState = props.initialState,
+            store = props.store;
+        var hasStore = store && 'dispatch' in store && 'getState' in store; //TODO Always recreate the store even if it could be reused? @see https://github.com/zeit/next.js/pull/4295#pullrequestreview-118516366
+
+        store = hasStore ? store : initStore({
+          makeStore: makeStore,
+          initialState: initialState,
+          config: config
+        });
+        if (config.debug) console.log('4. WrappedApp.render', hasStore ? 'picked up existing one,' : 'created new store with', 'initialState', initialState);
+        _this.store = store;
+        return _this;
+      }
+
+      (0, _createClass2.default)(WrappedApp, [{
+        key: "render",
+        value: function render() {
+          var _props = this.props,
+              initialProps = _props.initialProps,
+              initialState = _props.initialState,
+              store = _props.store,
+              props = (0, _objectWithoutProperties2.default)(_props, ["initialProps", "initialState", "store"]); // Cmp render must return something like <Provider><Component/></Provider>
+
+          return _react.default.createElement(App, (0, _extends2.default)({}, props, initialProps, {
+            store: this.store
+          }));
+        }
+      }]);
+      return WrappedApp;
+    }(_react.Component), Object.defineProperty(_class, "displayName", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: "withRedux(".concat(App.displayName || App.name || 'App', ")")
+    }), Object.defineProperty(_class, "getInitialProps", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function () {
+        var _value = (0, _asyncToGenerator2.default)(
+        /*#__PURE__*/
+        _regenerator.default.mark(function _callee(appCtx) {
+          var store, initialProps;
+          return _regenerator.default.wrap(function _callee$(_context) {
+            while (1) {
+              switch (_context.prev = _context.next) {
+                case 0:
+                  if (appCtx) {
+                    _context.next = 2;
+                    break;
+                  }
+
+                  throw new Error('No app context');
+
+                case 2:
+                  if (appCtx.ctx) {
+                    _context.next = 4;
+                    break;
+                  }
+
+                  throw new Error('No page context');
+
+                case 4:
+                  store = initStore({
+                    makeStore: makeStore,
+                    config: config,
+                    ctx: appCtx.ctx
+                  });
+                  if (config.debug) console.log('1. WrappedApp.getInitialProps wrapper got the store with state', store.getState());
+                  appCtx.ctx.store = store;
+                  appCtx.ctx.isServer = isServer;
+                  initialProps = {};
+
+                  if (!('getInitialProps' in App)) {
+                    _context.next = 13;
+                    break;
+                  }
+
+                  _context.next = 12;
+                  return App.getInitialProps.call(App, appCtx);
+
+                case 12:
+                  initialProps = _context.sent;
+
+                case 13:
+                  if (config.debug) console.log('3. WrappedApp.getInitialProps has store state', store.getState());
+                  return _context.abrupt("return", {
+                    store: store,
+                    isServer: isServer,
+                    initialState: config.serializeState(store.getState()),
+                    initialProps: initialProps
+                  });
+
+                case 15:
+                case "end":
+                  return _context.stop();
+              }
+            }
+          }, _callee, this);
+        }));
+
+        return function value(_x) {
+          return _value.apply(this, arguments);
+        };
+      }()
+    }), _temp;
+  };
+};
+
+exports.default = _default;
 
 /***/ }),
 
@@ -3097,15 +3395,42 @@ function warning(message) {
 
 /***/ }),
 
+/***/ "./node_modules/redux-thunk/es/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function createThunkMiddleware(extraArgument) {
+  return function (_ref) {
+    var dispatch = _ref.dispatch,
+        getState = _ref.getState;
+    return function (next) {
+      return function (action) {
+        if (typeof action === 'function') {
+          return action(dispatch, getState, extraArgument);
+        }
+
+        return next(action);
+      };
+    };
+  };
+}
+
+var thunk = createThunkMiddleware();
+thunk.withExtraArgument = createThunkMiddleware;
+
+/* harmony default export */ __webpack_exports__["a"] = (thunk);
+
+/***/ }),
+
 /***/ "./node_modules/redux/es/redux.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return createStore; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return createStore; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return combineReducers; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return bindActionCreators; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return applyMiddleware; });
-/* unused harmony export compose */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return compose; });
 /* unused harmony export __DO_NOT_USE__ActionTypes */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_symbol_observable__ = __webpack_require__("./node_modules/symbol-observable/es/index.js");
 
@@ -4510,7 +4835,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_react__);
 
-var _jsxFileName = "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\catalog.js";
+var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\product\\catalog.js";
 
 
 (function () {
@@ -4554,43 +4879,48 @@ function (_React$Component) {
       var _getInitialProps = _asyncToGenerator(
       /*#__PURE__*/
       __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.mark(function _callee(_ref) {
-        var reduxStore, state, res, data;
+        var store, req, query, state, res, data;
         return __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                reduxStore = _ref.reduxStore;
-                state = reduxStore.getState();
+                store = _ref.store, req = _ref.req, query = _ref.query;
+
+                if (req) {
+                  console.log(query);
+                }
+
+                state = store.getState();
 
                 if (!(state.product.products.length > 0)) {
-                  _context.next = 5;
+                  _context.next = 6;
                   break;
                 }
 
-                console.log('products from store');
+                console.info('products from store');
                 return _context.abrupt("return", {
                   products: state.product.products
                 });
 
-              case 5:
-                _context.next = 7;
-                return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["c" /* PRODUCTS */] + 'getAll', {
+              case 6:
+                _context.next = 8;
+                return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["b" /* PRODUCTS */] + 'getAll', {
                   method: 'GET'
                 });
 
-              case 7:
+              case 8:
                 res = _context.sent;
-                _context.next = 10;
+                _context.next = 11;
                 return res.json();
 
-              case 10:
+              case 11:
                 data = _context.sent;
-                console.log('products from API');
+                console.info('products from API');
                 return _context.abrupt("return", {
                   products: data.products
                 });
 
-              case 13:
+              case 14:
               case "end":
                 return _context.stop();
             }
@@ -4624,66 +4954,66 @@ function (_React$Component) {
       return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_layout__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 35
         }
       }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h3", {
         align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 36
         },
-        className: "jsx-385362788"
+        className: "jsx-2922181211"
       }, "Catalog"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 37
         },
-        className: "jsx-385362788"
+        className: "jsx-2922181211"
       }, this.props.products.map(function (product) {
         return __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("div", {
           key: product._id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 39
           },
-          className: "jsx-385362788" + " " + "productWrapper"
+          className: "jsx-2922181211" + " " + "productWrapper"
         }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("img", {
           src: product.image,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
+            lineNumber: 40
           },
-          className: "jsx-385362788" + " " + "productImage"
+          className: "jsx-2922181211" + " " + "productImage"
         }), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
           align: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 38
+            lineNumber: 41
           },
-          className: "jsx-385362788"
+          className: "jsx-2922181211"
         }, product.title), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("h6", {
           align: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 42
           },
-          className: "jsx-385362788"
+          className: "jsx-2922181211"
         }, product.price, "$"), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_next_link___default.a, {
           href: "/product/view?id=".concat(product._id),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 40
+            lineNumber: 43
           }
         }, __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 44
           },
-          className: "jsx-385362788" + " " + "forwardP"
+          className: "jsx-2922181211" + " " + "forwardP"
         }, "Forward")));
       })), __WEBPACK_IMPORTED_MODULE_8_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_styled_jsx_style___default.a, {
-        styleId: "385362788",
-        css: ".forwardP.jsx-385362788{color:green;font-size:20px;text-align:center;cursor:pointer;}.productWrapper.jsx-385362788{vertical-align:top;border:1px solid #cacaca;background:#f8f1ff;margin:20px 10px 20px 10px;padding:10px;position:static;display:inline-block;border-radius:15px;width:20%;min-height:200px;min-width:200px;}.productImage.jsx-385362788{background-repeat:no-repeat;width:100%;height:auto;max-width:200px;height:200px;}.btnForward.jsx-385362788{width:30px;height:30px;background:transparent;border:none;cursor:pointer;background-size:100%;background-size:30px auto;background-repeat:no-repeat;margin-left:65%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwcm9kdWN0XFxjYXRhbG9nLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZDNEIsQUFHNkIsQUFNTyxBQWFTLEFBT2pCLFdBQ0MsQ0ExQkcsT0FNVSxJQXFCRixJQTFCTCxDQWtCUCxXQUNDLEtBYk8sQ0FMSixDQTBCSCxLQVBJLE9BUUQsRUExQm5CLEdBSytCLElBY2QsTUFRUSxPQVB6QixVQWRpQixJQXNCYSxTQXJCVixnQkFDSyxDQXFCTyxvQkFwQlQsUUFxQkgsV0FwQk4sS0FxQmQsS0FwQnFCLGlCQUNELGdCQUNwQiIsImZpbGUiOiJwYWdlc1xccHJvZHVjdFxcY2F0YWxvZy5qcyIsInNvdXJjZVJvb3QiOiJFOlxcUHJvamVjdHNcXHNlcmhpaVxcbmV4dGpzLXByb2plY3QiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvbGF5b3V0JztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7QVBJX1VSTCwgUFJPRFVDVFN9IGZyb20gXCIuLi8uLi9hc3NldHMvY29uZmlnL2FwaVwiO1xyXG5pbXBvcnQge3VwbG9hZFByb2R1Y3RzfSBmcm9tIFwiLi4vLi4vcmVkdXgvYWN0aW9ucy9wcm9kdWN0XCI7XHJcbmltcG9ydCB7Y29ubmVjdH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuXHJcbmNsYXNzIENhdGFsb2cgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7cmVkdXhTdG9yZX0pe1xyXG4gICAgICAgIGNvbnN0IHN0YXRlID0gcmVkdXhTdG9yZS5nZXRTdGF0ZSgpO1xyXG4gICAgICAgIGlmKHN0YXRlLnByb2R1Y3QucHJvZHVjdHMubGVuZ3RoID4gMCl7XHJcbiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdwcm9kdWN0cyBmcm9tIHN0b3JlJyk7XHJcbiAgICAgICAgICAgIHJldHVybiB7cHJvZHVjdHM6IHN0YXRlLnByb2R1Y3QucHJvZHVjdHN9O1xyXG4gICAgICAgIH1cclxuICAgICAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChBUElfVVJMICsgUFJPRFVDVFMgKyAnZ2V0QWxsJywge21ldGhvZDogJ0dFVCd9KTtcclxuICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcclxuICAgICAgICBjb25zb2xlLmxvZygncHJvZHVjdHMgZnJvbSBBUEknKTtcclxuICAgICAgICByZXR1cm4ge3Byb2R1Y3RzOiBkYXRhLnByb2R1Y3RzfTtcclxuICAgIH1cclxuXHJcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcyl7XHJcbiAgICAgICAgc3VwZXIoKTtcclxuICAgICAgICBpZihwcm9wcy51cGxvYWRlZFByb2R1Y3RzLmxlbmd0aCA9PT0gMCl7XHJcbiAgICAgICAgICAgIHByb3BzLnVwbG9hZFByb2R1Y3RzKHByb3BzLnByb2R1Y3RzKTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcbiAgICAgICAgcmV0dXJuKFxyXG4gICAgICAgICAgICA8TGF5b3V0PlxyXG4gICAgICAgICAgICAgICAgPGgzIGFsaWduPVwiY2VudGVyXCI+Q2F0YWxvZzwvaDM+XHJcbiAgICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICAgICAge3RoaXMucHJvcHMucHJvZHVjdHMubWFwKChwcm9kdWN0KSA9PiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicHJvZHVjdFdyYXBwZXJcIiBrZXk9e3Byb2R1Y3QuX2lkfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwicHJvZHVjdEltYWdlXCIgc3JjPXtwcm9kdWN0LmltYWdlfS8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDYgYWxpZ249XCJjZW50ZXJcIj57cHJvZHVjdC50aXRsZX08L2g2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGFsaWduPVwiY2VudGVyXCI+e3Byb2R1Y3QucHJpY2V9JDwvaDY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL3Byb2R1Y3Qvdmlldz9pZD0ke3Byb2R1Y3QuX2lkfWB9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvcndhcmRQXCI+Rm9yd2FyZDwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgKSl9XHJcbiAgICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgICAuZm9yd2FyZFAge1xyXG4gICAgICAgICAgICAgICAgY29sb3I6IGdyZWVuO1xyXG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIC5wcm9kdWN0V3JhcHBlcntcclxuICAgICAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XHJcbiAgICAgICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2FjYWNhO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZDogI2Y4ZjFmZjtcclxuICAgICAgICAgICAgICAgIG1hcmdpbjogMjBweCAxMHB4IDIwcHggMTBweDtcclxuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICAgICAgICAgICAgICBwb3NpdGlvbjogc3RhdGljO1xyXG4gICAgICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDtcclxuICAgICAgICAgICAgICAgIHdpZHRoOiAyMCU7XHJcbiAgICAgICAgICAgICAgICBtaW4taGVpZ2h0OiAyMDBweDtcclxuICAgICAgICAgICAgICAgIG1pbi13aWR0aDogMjAwcHg7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgLnByb2R1Y3RJbWFnZSB7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICAgICAgICAgICAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICAgICAgICAgICAgICBtYXgtd2lkdGg6IDIwMHB4O1xyXG4gICAgICAgICAgICAgICAgaGVpZ2h0OiAyMDBweDtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAuYnRuRm9yd2FyZCB7XHJcbiAgICAgICAgICAgICAgICB3aWR0aDogMzBweDtcclxuICAgICAgICAgICAgICAgIGhlaWdodDogMzBweDtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gICAgICAgICAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAzMHB4IGF1dG87XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDY1JTtcclxuICAgICAgICAgICAgfVxyXG4gICAgYH08L3N0eWxlPlxyXG4gICAgICAgICAgICA8L0xheW91dD5cclxuICAgICAgICApO1xyXG4gICAgfVxyXG59XHJcblxyXG5jb25zdCBtYXBTdGF0ZVRvUHJvcHMgPSBzdGF0ZSA9PiB7XHJcbiAgICByZXR1cm4ge1xyXG4gICAgICAgIHVwbG9hZGVkUHJvZHVjdHM6IHN0YXRlLnByb2R1Y3QucHJvZHVjdHNcclxuICAgIH1cclxufTtcclxuXHJcbmNvbnN0IG1hcERpc3BhdGNoVG9Qcm9wcyA9IGRpc3BhdGNoID0+IHtcclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgdXBsb2FkUHJvZHVjdHM6IHByb2R1Y3RzID0+IGRpc3BhdGNoKHVwbG9hZFByb2R1Y3RzKHByb2R1Y3RzKSlcclxuICAgIH1cclxufTtcclxuXHJcbi8vZXhwb3J0IGRlZmF1bHQgQ2F0YWxvZztcclxuZXhwb3J0IGRlZmF1bHQgY29ubmVjdChtYXBTdGF0ZVRvUHJvcHMsIG1hcERpc3BhdGNoVG9Qcm9wcykoQ2F0YWxvZyk7Il19 */\n/*@ sourceURL=pages\\product\\catalog.js */"
+        styleId: "2922181211",
+        css: ".forwardP.jsx-2922181211{color:green;font-size:20px;text-align:center;cursor:pointer;}.productWrapper.jsx-2922181211{vertical-align:top;border:1px solid #cacaca;background:#f8f1ff;margin:20px 10px 20px 10px;padding:10px;position:static;display:inline-block;border-radius:15px;width:20%;min-height:200px;min-width:200px;}.productImage.jsx-2922181211{background-repeat:no-repeat;width:100%;height:auto;max-width:200px;height:200px;}.btnForward.jsx-2922181211{width:30px;height:30px;background:transparent;border:none;cursor:pointer;background-size:100%;background-size:30px auto;background-repeat:no-repeat;margin-left:65%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzXFxwcm9kdWN0XFxjYXRhbG9nLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdENEIsQUFHcUMsQUFNTyxBQWFTLEFBT2pCLFdBQ0MsQ0ExQkcsT0FNVSxJQXFCRixJQTFCTCxDQWtCUCxXQUNDLEtBYk8sQ0FMSixDQTBCSCxLQVBJLE9BUUQsRUExQm5CLEdBSytCLElBY2QsTUFRUSxPQVB6QixVQWRpQixJQXNCYSxTQXJCVixnQkFDSyxDQXFCTyxvQkFwQlQsUUFxQkgsV0FwQk4sS0FxQmQsS0FwQnFCLGlCQUNELGdCQUNwQiIsImZpbGUiOiJwYWdlc1xccHJvZHVjdFxcY2F0YWxvZy5qcyIsInNvdXJjZVJvb3QiOiJFOlxcUHJvamVjdHNcXHNlcmhpaVxcbmV4dGpzLXJlZHV4LXByb2plY3QiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGF5b3V0IGZyb20gJy4uLy4uL2NvbXBvbmVudHMvbGF5b3V0JztcclxuaW1wb3J0IGZldGNoIGZyb20gJ2lzb21vcnBoaWMtdW5mZXRjaCc7XHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XHJcbmltcG9ydCB7QVBJX1VSTCwgUFJPRFVDVFN9IGZyb20gXCIuLi8uLi9hc3NldHMvY29uZmlnL2FwaVwiO1xyXG5pbXBvcnQge3VwbG9hZFByb2R1Y3RzfSBmcm9tIFwiLi4vLi4vcmVkdXgvYWN0aW9ucy9wcm9kdWN0XCI7XHJcbmltcG9ydCB7Y29ubmVjdH0gZnJvbSAncmVhY3QtcmVkdXgnO1xyXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5cclxuXHJcbmNsYXNzIENhdGFsb2cgZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xyXG4gICAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7c3RvcmUsIHJlcSwgcXVlcnl9KXtcclxuICAgICAgICBpZihyZXEpe1xyXG4gICAgICAgICAgICBjb25zb2xlLmxvZyhxdWVyeSk7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGNvbnN0IHN0YXRlID0gc3RvcmUuZ2V0U3RhdGUoKTtcclxuICAgICAgICBpZihzdGF0ZS5wcm9kdWN0LnByb2R1Y3RzLmxlbmd0aCA+IDApe1xyXG4gICAgICAgICAgICBjb25zb2xlLmluZm8oJ3Byb2R1Y3RzIGZyb20gc3RvcmUnKTtcclxuICAgICAgICAgICAgcmV0dXJuIHtwcm9kdWN0czogc3RhdGUucHJvZHVjdC5wcm9kdWN0c307XHJcbiAgICAgICAgfVxyXG4gICAgICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKEFQSV9VUkwgKyBQUk9EVUNUUyArICdnZXRBbGwnLCB7bWV0aG9kOiAnR0VUJ30pO1xyXG4gICAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXMuanNvbigpO1xyXG4gICAgICAgIGNvbnNvbGUuaW5mbygncHJvZHVjdHMgZnJvbSBBUEknKTtcclxuICAgICAgICByZXR1cm4ge3Byb2R1Y3RzOiBkYXRhLnByb2R1Y3RzfTtcclxuICAgIH1cclxuXHJcbiAgICBjb25zdHJ1Y3Rvcihwcm9wcyl7XHJcbiAgICAgICAgc3VwZXIoKTtcclxuICAgICAgICBpZihwcm9wcy51cGxvYWRlZFByb2R1Y3RzLmxlbmd0aCA9PT0gMCl7XHJcbiAgICAgICAgICAgIHByb3BzLnVwbG9hZFByb2R1Y3RzKHByb3BzLnByb2R1Y3RzKTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgcmVuZGVyKCl7XHJcbiAgICAgICAgcmV0dXJuKFxyXG4gICAgICAgICAgICA8TGF5b3V0PlxyXG4gICAgICAgICAgICAgICAgPGgzIGFsaWduPVwiY2VudGVyXCI+Q2F0YWxvZzwvaDM+XHJcbiAgICAgICAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgICAgICAgICAge3RoaXMucHJvcHMucHJvZHVjdHMubWFwKChwcm9kdWN0KSA9PiAoXHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicHJvZHVjdFdyYXBwZXJcIiBrZXk9e3Byb2R1Y3QuX2lkfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgY2xhc3NOYW1lPVwicHJvZHVjdEltYWdlXCIgc3JjPXtwcm9kdWN0LmltYWdlfS8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDYgYWxpZ249XCJjZW50ZXJcIj57cHJvZHVjdC50aXRsZX08L2g2PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGg2IGFsaWduPVwiY2VudGVyXCI+e3Byb2R1Y3QucHJpY2V9JDwvaDY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgL3Byb2R1Y3Qvdmlldz9pZD0ke3Byb2R1Y3QuX2lkfWB9PlxyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImZvcndhcmRQXCI+Rm9yd2FyZDwvcD5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvTGluaz5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgKSl9XHJcbiAgICAgICAgICAgICAgICA8L3VsPlxyXG4gICAgICAgICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgICAgICAgICAgIC5mb3J3YXJkUCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiBncmVlbjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgLnByb2R1Y3RXcmFwcGVye1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjY2FjYWNhO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kOiAjZjhmMWZmO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXJnaW46IDIwcHggMTBweCAyMHB4IDEwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiBzdGF0aWM7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTVweDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDIwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIG1pbi13aWR0aDogMjAwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIC5wcm9kdWN0SW1hZ2Uge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBtYXgtd2lkdGg6IDIwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDIwMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICAuYnRuRm9yd2FyZCB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMHB4O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBoZWlnaHQ6IDMwcHg7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6IG5vbmU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiAxMDAlO1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDMwcHggYXV0bztcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICAgICAgICAgICAgICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDY1JTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICBgfTwvc3R5bGU+XHJcbiAgICAgICAgICAgIDwvTGF5b3V0PlxyXG4gICAgICAgICk7XHJcbiAgICB9XHJcbn1cclxuXHJcbmNvbnN0IG1hcFN0YXRlVG9Qcm9wcyA9IHN0YXRlID0+IHtcclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgdXBsb2FkZWRQcm9kdWN0czogc3RhdGUucHJvZHVjdC5wcm9kdWN0c1xyXG4gICAgfVxyXG59O1xyXG5cclxuY29uc3QgbWFwRGlzcGF0Y2hUb1Byb3BzID0gZGlzcGF0Y2ggPT4ge1xyXG4gICAgcmV0dXJuIHtcclxuICAgICAgICB1cGxvYWRQcm9kdWN0czogcHJvZHVjdHMgPT4gZGlzcGF0Y2godXBsb2FkUHJvZHVjdHMocHJvZHVjdHMpKVxyXG4gICAgfVxyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgY29ubmVjdChtYXBTdGF0ZVRvUHJvcHMsIG1hcERpc3BhdGNoVG9Qcm9wcykoQ2F0YWxvZyk7Il19 */\n/*@ sourceURL=pages\\product\\catalog.js */"
       }));
     }
   }, {
@@ -4710,8 +5040,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
       return dispatch(Object(__WEBPACK_IMPORTED_MODULE_6__redux_actions_product__["a" /* uploadProducts */])(products));
     }
   };
-}; //export default Catalog;
-
+};
 
 var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect */])(mapStateToProps, mapDispatchToProps)(Catalog);
 
@@ -4727,10 +5056,10 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
     return;
   }
 
-  reactHotLoader.register(Catalog, "Catalog", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\catalog.js");
-  reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\catalog.js");
-  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\catalog.js");
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-project\\pages\\product\\catalog.js");
+  reactHotLoader.register(Catalog, "Catalog", "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\product\\catalog.js");
+  reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\product\\catalog.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\product\\catalog.js");
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\product\\catalog.js");
   leaveModule(module);
 })();
 
@@ -4775,19 +5104,19 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
 
 var orderProduct = function orderProduct(product) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* ORDER_PRODUCT */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* ORDER_PRODUCT */],
     payload: product
   };
 };
 var updateOrder = function updateOrder(product) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPDATE_ORDER */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* UPDATE_ORDER */],
     payload: product
   };
 };
 var uploadProducts = function uploadProducts(products) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["g" /* UPLOAD_PRODUCTS */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPLOAD_PRODUCTS */],
     payload: products
   };
 };
@@ -4808,10 +5137,10 @@ var remove = function remove(id) {
     return;
   }
 
-  reactHotLoader.register(orderProduct, "orderProduct", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
-  reactHotLoader.register(updateOrder, "updateOrder", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
-  reactHotLoader.register(uploadProducts, "uploadProducts", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
-  reactHotLoader.register(remove, "remove", "E:\\Projects\\serhii\\nextjs-project\\redux\\actions\\product.js");
+  reactHotLoader.register(orderProduct, "orderProduct", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\product.js");
+  reactHotLoader.register(updateOrder, "updateOrder", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\product.js");
+  reactHotLoader.register(uploadProducts, "uploadProducts", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\product.js");
+  reactHotLoader.register(remove, "remove", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\product.js");
   leaveModule(module);
 })();
 
@@ -4824,26 +5153,21 @@ var remove = function remove(id) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return clockTypes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ORDER_PRODUCT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPDATE_ORDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return UPLOAD_PRODUCTS; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ORDER_PRODUCT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return UPDATE_ORDER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPLOAD_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DELETE_FROM_ORDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SAVE_USER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_TOKEN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return LOGOUT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_USER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SAVE_TOKEN; });
+/* unused harmony export LOGOUT */
+/* unused harmony export DATA_LOAD_SUCCESS */
+/* unused harmony export SAVE_MY_DATA */
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
   enterModule && enterModule(module);
 })();
 
-var clockTypes = {
-  TICK: 'TICK',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
-  RESET: 'RESET'
-};
 var ORDER_PRODUCT = 'ORDER_PRODUCT';
 var UPDATE_ORDER = 'UPDATE_ORDER';
 var UPLOAD_PRODUCTS = 'UPLOAD_PRODUCTS';
@@ -4851,6 +5175,8 @@ var DELETE_FROM_ORDER = 'DELETE_FROM_ORDER';
 var SAVE_USER = 'SAVE_USER';
 var SAVE_TOKEN = 'SAVE_TOKEN';
 var LOGOUT = 'LOGOUT';
+var DATA_LOAD_SUCCESS = 'DATA_LOAD_SUCCESS';
+var SAVE_MY_DATA = 'SAVE_MY_DATA';
 ;
 
 (function () {
@@ -4862,14 +5188,15 @@ var LOGOUT = 'LOGOUT';
     return;
   }
 
-  reactHotLoader.register(clockTypes, "clockTypes", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(ORDER_PRODUCT, "ORDER_PRODUCT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(UPDATE_ORDER, "UPDATE_ORDER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(UPLOAD_PRODUCTS, "UPLOAD_PRODUCTS", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(DELETE_FROM_ORDER, "DELETE_FROM_ORDER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(SAVE_USER, "SAVE_USER", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(SAVE_TOKEN, "SAVE_TOKEN", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
-  reactHotLoader.register(LOGOUT, "LOGOUT", "E:\\Projects\\serhii\\nextjs-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(ORDER_PRODUCT, "ORDER_PRODUCT", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(UPDATE_ORDER, "UPDATE_ORDER", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(UPLOAD_PRODUCTS, "UPLOAD_PRODUCTS", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(DELETE_FROM_ORDER, "DELETE_FROM_ORDER", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(SAVE_USER, "SAVE_USER", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(SAVE_TOKEN, "SAVE_TOKEN", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(LOGOUT, "LOGOUT", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(DATA_LOAD_SUCCESS, "DATA_LOAD_SUCCESS", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(SAVE_MY_DATA, "SAVE_MY_DATA", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   leaveModule(module);
 })();
 
@@ -4878,7 +5205,292 @@ var LOGOUT = 'LOGOUT';
 
 /***/ }),
 
-/***/ 4:
+/***/ "./redux/middleware/logger.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return logger; });
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+var logger = function logger(store) {
+  return function (next) {
+    return function (action) {
+      //console.log('dispatching', action.type);
+      var result = next(action); //console.log('new state', store.getState());
+
+      return result;
+    };
+  };
+};
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(logger, "logger", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\middleware\\logger.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./redux/reducers/product.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (immutable) */ __webpack_exports__["a"] = productReducer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+var initialState = {
+  productState: [],
+  products: []
+};
+function productReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* ORDER_PRODUCT */]:
+      return _objectSpread({}, state, {
+        productState: _toConsumableArray(state.productState).concat([action.payload])
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* UPDATE_ORDER */]:
+      var newState = state.productState.filter(function (el) {
+        return el.id !== action.payload.id;
+      });
+      return _objectSpread({}, state, {
+        productState: _toConsumableArray(newState).concat([action.payload])
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPLOAD_PRODUCTS */]:
+      return _objectSpread({}, state, {
+        products: action.payload
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["a" /* DELETE_FROM_ORDER */]:
+      return _objectSpread({}, state, {
+        productState: state.productState.filter(function (el) {
+          return el.id !== action.payload;
+        })
+      });
+
+    default:
+      return state;
+  }
+}
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(initialState, "initialState", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\product.js");
+  reactHotLoader.register(productReducer, "productReducer", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\product.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./redux/reducers/root.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("./node_modules/redux/es/redux.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product__ = __webpack_require__("./redux/reducers/product.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user__ = __webpack_require__("./redux/reducers/user.js");
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+
+
+var _default = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["c" /* combineReducers */])({
+  product: __WEBPACK_IMPORTED_MODULE_1__product__["a" /* default */],
+  user: __WEBPACK_IMPORTED_MODULE_2__user__["a" /* default */]
+});
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\root.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./redux/reducers/user.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (immutable) */ __webpack_exports__["a"] = userReducer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+var initialState = {
+  user: [],
+  token: ''
+};
+function userReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* SAVE_USER */]:
+      return _objectSpread({}, state, {
+        user: action.payload
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* SAVE_TOKEN */]:
+      return _objectSpread({}, state, {
+        token: action.payload
+      });
+
+    default:
+      return state;
+  }
+}
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(initialState, "initialState", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\user.js");
+  reactHotLoader.register(userReducer, "userReducer", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\user.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./redux/store.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_thunk__ = __webpack_require__("./node_modules/redux-thunk/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__("./node_modules/redux/es/redux.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_root__ = __webpack_require__("./redux/reducers/root.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__middleware_logger__ = __webpack_require__("./redux/middleware/logger.js");
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+
+
+
+
+var _default = function _default() {
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var isServer = typeof window === 'undefined';
+  var composeEnhancers;
+
+  if (!isServer) {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+  } else {
+    composeEnhancers = __WEBPACK_IMPORTED_MODULE_1_redux__["d" /* compose */];
+  }
+
+  var date = new Date();
+  console.log(">> Creating store ".concat(date.getHours(), ":").concat(date.getMinutes(), ":").concat(date.getSeconds(), "(").concat(date.getMilliseconds(), ")"));
+  return Object(__WEBPACK_IMPORTED_MODULE_1_redux__["e" /* createStore */])(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState, composeEnhancers(Object(__WEBPACK_IMPORTED_MODULE_1_redux__["a" /* applyMiddleware */])(__WEBPACK_IMPORTED_MODULE_3__middleware_logger__["a" /* logger */], __WEBPACK_IMPORTED_MODULE_0_redux_thunk__["a" /* default */])));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\store.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/product/catalog.js");
@@ -4886,7 +5498,7 @@ module.exports = __webpack_require__("./pages/product/catalog.js");
 
 /***/ })
 
-},[4])
+},[3])
           return { page: comp.default }
         })
       ;
