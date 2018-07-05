@@ -34,7 +34,7 @@ class Navbar extends Component {
             <div style={this.style}>
                 <div className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
                     <div className="container">
-                        <Link href="/">
+                        <Link prefetch  href="/">
                             <a className="navbar-brand">Next.js Project</a>
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
@@ -50,17 +50,17 @@ class Navbar extends Component {
                                     </Link>
                                 </li>}
                                 {this.props.token && <li className="nav-item">
-                                    <Link href="/product/order">
+                                    <Link prefetch href="/product/order">
                                         <a className="nav-link">Order</a>
                                     </Link>
                                 </li>}
                                 {!this.props.token && <li className="nav-item">
-                                    <Link href="/user/login">
+                                    <Link prefetch href="/user/login">
                                         <a className="nav-link">Login</a>
                                     </Link>
                                 </li>}
                                 {!this.props.token && <li className="nav-item">
-                                    <Link href="/user/register">
+                                    <Link prefetch href="/user/register">
                                         <a className="nav-link">Register</a>
                                     </Link>
                                 </li>}

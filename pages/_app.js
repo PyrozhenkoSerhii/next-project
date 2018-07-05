@@ -18,11 +18,8 @@ export default withRedux(initStore)(class MyApp extends App {
 				const cookiesJSON = serverCookies.parse(cookies)
 				const token = cookiesJSON.token;
 			}
-
-			console.log('server cookies', cookies);
 		} else {
 			cookies = clientCookies.get('token');
-			console.log('client cookies', cookies);
 		}
 		return {
 			pageProps: (Component.getInitialProps ? await Component.getInitialProps(ctx) : {}),

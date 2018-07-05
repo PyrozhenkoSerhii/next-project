@@ -6,7 +6,6 @@ import { uploadProducts } from "../../redux/actions/product";
 import { connect } from 'react-redux';
 import React from 'react';
 
-
 class Catalog extends React.Component {
     static async getInitialProps({ store, req, query }) {
         let products;

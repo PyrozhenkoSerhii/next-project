@@ -1,10 +1,29 @@
-import {Component} from 'react';
-import {connect} from 'react-redux'
+import { Component } from 'react';
+import { connect } from 'react-redux'
 import Layout from "../../components/layout";
-import {remove} from "../../redux/actions/product";
+import { remove } from "../../redux/actions/product";
 import Link from 'next/link'
 
+import { testServerRedux } from '../../redux/actions/user';
+
 class Order extends Component {
+    static getInitialProps({ req, store }) {
+        const date = new Date();
+        console.log(`>> Testing... ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}(${date.getMilliseconds()})`);
+        // how to send a data from server redux to client one?
+        if (req) {
+            store.dispatch(testServerRedux());
+            console.log(store.getState());
+            console.log('server dispatch testing');
+            const timer = setTimeout(() => console.log('timeout'), 5000)
+        } else {
+            store.dispatch(testServerRedux());
+            console.log('client dispatch test');
+        }
+
+
+    }
+
     constructor(props) {
         super();
         this.stackPrices = [];
@@ -12,7 +31,7 @@ class Order extends Component {
 
     getProductInfo(id) {
         let product = this.props.products.find(obj => obj._id === id);
-        return {title: product.title, price: product.price};
+        return { title: product.title, price: product.price };
     };
 
     getStackPrice(count, price) {
@@ -31,14 +50,14 @@ class Order extends Component {
     };
 
     order = () => {
-
+        // todo: product order
     };
 
     render() {
         return (
             <Layout>
                 <h3 align="center">Your order:</h3>
-                <hr/>
+                <hr />
                 <div className="row">
                     <div className="col-md-2">
                         <h4>Remove</h4>
@@ -77,10 +96,10 @@ class Order extends Component {
                         <div className="col-md-3">
                             <h5>{this.getStackPrice(el.count, this.getProductInfo(el.id).price)}</h5>
                         </div>
-                        <hr/>
+                        <hr />
                     </div>
                 ))}
-                <hr/>
+                <hr />
                 <h4>Final price: {this.getFinalPrice()}</h4>
                 <button className="btn btn-primary" onClick={this.order}>Order</button>
                 <style jsx>{`
@@ -105,7 +124,7 @@ class Order extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return {productState: state.product.productState, products: state.product.products}
+    return { productState: state.product.productState, products: state.product.products }
 };
 
 const mapDispatchToProps = dispatch => {

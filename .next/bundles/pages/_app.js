@@ -3182,11 +3182,8 @@ function (_App) {
                     cookiesJSON = __WEBPACK_IMPORTED_MODULE_7_cookie___default.a.parse(cookies);
                     token = cookiesJSON.token;
                   }
-
-                  console.log('server cookies', cookies);
                 } else {
                   cookies = __WEBPACK_IMPORTED_MODULE_6_js_cookie___default.a.get('token');
-                  console.log('client cookies', cookies);
                 }
 
                 if (!Component.getInitialProps) {
@@ -3249,18 +3246,18 @@ function (_App) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_next_app__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 39
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["a" /* Provider */], {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 40
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Component, _extends({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 41
         }
       }))));
     }
@@ -3322,6 +3319,7 @@ function (_App) {
 /* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export saveUser */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveToken; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return deleteToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return testServerRedux; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
@@ -3347,6 +3345,14 @@ var deleteToken = function deleteToken() {
     type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* DELETE_TOKEN */]
   };
 };
+var testServerRedux = function testServerRedux() {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* TEST_SERVER_REDUX */],
+    payload: {
+      'redux': 'server'
+    }
+  };
+};
 ;
 
 (function () {
@@ -3361,6 +3367,7 @@ var deleteToken = function deleteToken() {
   reactHotLoader.register(saveUser, "saveUser", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
   reactHotLoader.register(saveToken, "saveToken", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
   reactHotLoader.register(deleteToken, "deleteToken", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
+  reactHotLoader.register(testServerRedux, "testServerRedux", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
   leaveModule(module);
 })();
 
@@ -3374,8 +3381,8 @@ var deleteToken = function deleteToken() {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ORDER_PRODUCT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPDATE_ORDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return UPLOAD_PRODUCTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return UPDATE_ORDER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return UPLOAD_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DELETE_FROM_ORDER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SAVE_USER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_TOKEN; });
@@ -3383,6 +3390,7 @@ var deleteToken = function deleteToken() {
 /* unused harmony export LOGOUT */
 /* unused harmony export DATA_LOAD_SUCCESS */
 /* unused harmony export SAVE_MY_DATA */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return TEST_SERVER_REDUX; });
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -3399,6 +3407,7 @@ var DELETE_TOKEN = 'DELETE_TOKEN';
 var LOGOUT = 'LOGOUT';
 var DATA_LOAD_SUCCESS = 'DATA_LOAD_SUCCESS';
 var SAVE_MY_DATA = 'SAVE_MY_DATA';
+var TEST_SERVER_REDUX = 'TEST_SERVER_REDUX';
 ;
 
 (function () {
@@ -3420,6 +3429,7 @@ var SAVE_MY_DATA = 'SAVE_MY_DATA';
   reactHotLoader.register(LOGOUT, "LOGOUT", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(DATA_LOAD_SUCCESS, "DATA_LOAD_SUCCESS", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_MY_DATA, "SAVE_MY_DATA", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(TEST_SERVER_REDUX, "TEST_SERVER_REDUX", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   leaveModule(module);
 })();
 
@@ -3508,7 +3518,7 @@ function productReducer() {
         productState: _toConsumableArray(state.productState).concat([action.payload])
       });
 
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPDATE_ORDER */]:
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["g" /* UPDATE_ORDER */]:
       var newState = state.productState.filter(function (el) {
         return el.id !== action.payload.id;
       });
@@ -3516,7 +3526,7 @@ function productReducer() {
         productState: _toConsumableArray(newState).concat([action.payload])
       });
 
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["g" /* UPLOAD_PRODUCTS */]:
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["h" /* UPLOAD_PRODUCTS */]:
       return _objectSpread({}, state, {
         products: action.payload
       });
@@ -3635,6 +3645,11 @@ function userReducer() {
     case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* DELETE_TOKEN */]:
       return _objectSpread({}, state, {
         token: undefined
+      });
+
+    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* TEST_SERVER_REDUX */]:
+      return _objectSpread({}, state, {
+        server: action.payload
       });
 
     default:
