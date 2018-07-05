@@ -93,6 +93,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_cookie__ = __webpack_require__("cookie");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_cookie__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__redux_actions_user__ = __webpack_require__("./redux/actions/user.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_socket_io_client__ = __webpack_require__("socket.io-client");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_socket_io_client__);
 
 var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\_app.js";
 
@@ -113,6 +115,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -198,10 +201,26 @@ function (_App) {
     var cookies = props.cookies,
         store = props.store;
     store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_8__redux_actions_user__["b" /* saveToken */])(cookies));
+    _this.state = {
+      socket: null
+    };
     return _this;
   }
 
   _createClass(MyApp, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var socket = __WEBPACK_IMPORTED_MODULE_9_socket_io_client___default()('https://obscure-stream-46512.herokuapp.com/');
+      this.setState({
+        socket: socket
+      });
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.state.socket.close();
+    }
+  }, {
     key: "render",
     value: function render() {
       var _props = this.props,
@@ -211,18 +230,19 @@ function (_App) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_next_app__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 55
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 56
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Component, _extends({}, pageProps, {
+        socket: this.state.socket,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 57
         }
       }))));
     }
@@ -240,7 +260,7 @@ function (_App) {
 /* unused harmony export saveUser */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveToken; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return deleteToken; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return testServerRedux; });
+/* unused harmony export testServerRedux */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
 
 var saveUser = function saveUser(user) {
@@ -304,13 +324,13 @@ var TEST_SERVER_REDUX = 'TEST_SERVER_REDUX';
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return logger; });
+/* unused harmony export logger */
 var logger = function logger(store) {
   return function (next) {
     return function (action) {
-      //console.log('dispatching', action.type);
-      var result = next(action); //console.log('new state', store.getState());
-
+      console.log('dispatching', action.type);
+      var result = next(action);
+      console.log('new state', store.getState());
       return result;
     };
   };
@@ -470,7 +490,7 @@ function userReducer() {
 
   var date = new Date();
   console.log(">> Creating store ".concat(date.getHours(), ":").concat(date.getMinutes(), ":").concat(date.getSeconds(), "(").concat(date.getMilliseconds(), ")"));
-  return Object(__WEBPACK_IMPORTED_MODULE_1_redux__["createStore"])(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState, composeEnhancers(Object(__WEBPACK_IMPORTED_MODULE_1_redux__["applyMiddleware"])(__WEBPACK_IMPORTED_MODULE_3__middleware_logger__["a" /* logger */], __WEBPACK_IMPORTED_MODULE_0_redux_thunk___default.a)));
+  return Object(__WEBPACK_IMPORTED_MODULE_1_redux__["createStore"])(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState, composeEnhancers(Object(__WEBPACK_IMPORTED_MODULE_1_redux__["applyMiddleware"])(__WEBPACK_IMPORTED_MODULE_0_redux_thunk___default.a)));
 });
 
 /***/ }),
@@ -543,6 +563,13 @@ module.exports = require("redux");
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
+
+/***/ }),
+
+/***/ "socket.io-client":
+/***/ (function(module, exports) {
+
+module.exports = require("socket.io-client");
 
 /***/ })
 

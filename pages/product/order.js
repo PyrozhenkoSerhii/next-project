@@ -7,22 +7,20 @@ import Link from 'next/link'
 import { testServerRedux } from '../../redux/actions/user';
 
 class Order extends Component {
-    static getInitialProps({ req, store }) {
-        const date = new Date();
-        console.log(`>> Testing... ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}(${date.getMilliseconds()})`);
-        // how to send a data from server redux to client one?
-        if (req) {
-            store.dispatch(testServerRedux());
-            console.log(store.getState());
-            console.log('server dispatch testing');
-            const timer = setTimeout(() => console.log('timeout'), 5000)
-        } else {
-            store.dispatch(testServerRedux());
-            console.log('client dispatch test');
-        }
-
-
-    }
+    // static getInitialProps({ req, store }) {
+    //     const date = new Date();
+    //     console.log(`>> Testing... ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}(${date.getMilliseconds()})`);
+    //     // how to send a data from server redux to client one?
+    //     if (req) {
+    //         store.dispatch(testServerRedux());
+    //         console.log(store.getState());
+    //         console.log('server dispatch testing');
+    //         const timer = setTimeout(() => console.log('timeout'), 5000)
+    //     } else {
+    //         store.dispatch(testServerRedux());
+    //         console.log('client dispatch test');
+    //     }       
+    // }
 
     constructor(props) {
         super();
@@ -132,6 +130,5 @@ const mapDispatchToProps = dispatch => {
         remove: id => dispatch(remove(id))
     }
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Order);

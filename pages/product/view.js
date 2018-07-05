@@ -53,7 +53,6 @@ class View extends React.Component {
         }
     };
 
-
     render() {
         return (
             <Layout>
@@ -92,7 +91,6 @@ class View extends React.Component {
     }
 }
 
-
 const mapStateToProps = state => {
     return {
         productState: state.product.productState
@@ -105,6 +103,5 @@ const mapDispatchToProps = dispatch => {
         update: product => dispatch(updateOrder(product))
     }
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(View);

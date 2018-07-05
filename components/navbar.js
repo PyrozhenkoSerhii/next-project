@@ -22,10 +22,6 @@ class Navbar extends Component {
         
     };
 
-    style = {
-        marginBot: '100px'
-    }
-
     render() {
         if (this.state.redirect) {
             Router.push('/user/login')
@@ -84,7 +80,7 @@ const mapStateToProps = state => {
     return {
         token: state.user.token
     }
-};
+}
 
 const mapDispatchToProps = dispatch => {
     return {

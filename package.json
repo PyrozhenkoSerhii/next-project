@@ -1,16 +1,15 @@
 {
   "name": "nextjs-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Next.js project with redux wrapper package implementation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set NODE_ENV=production&&node server.js",
     "build": "next build",
     "dev": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "PyrozhenkoSerhii",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
@@ -29,6 +28,7 @@
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-persist": "^5.10.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^2.1.1"
   }
 }

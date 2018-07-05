@@ -17,5 +17,5 @@ export default (initialState = {}) => {
     const date = new Date();
     console.log(`>> Creating store ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}(${date.getMilliseconds()})`);
 
-    return createStore(rootReducer, initialState, composeEnhancers(applyMiddleware(logger, thunk)));
+    return createStore(rootReducer, initialState, composeEnhancers(applyMiddleware(thunk)));
 }

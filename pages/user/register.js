@@ -1,10 +1,9 @@
 import Layout from '../../components/layout';
 import RegisterForm from '../../components/user/register';
 
-
 const Register = () => (
     <Layout>
-        <h3 align="center">Register</h3>
+        <h2 align="center">Register</h2>
         <RegisterForm/>
     </Layout>
 );

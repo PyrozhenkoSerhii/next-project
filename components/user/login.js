@@ -1,17 +1,13 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {saveUser, saveToken} from "../../redux/actions/user";
+import { connect } from 'react-redux';
 import axios from 'axios';
 import Router from 'next/router';
-
-import {API_URL, CUSTOMERS} from "../../assets/config/api";
-
-import {FormGroup} from 'react-bootstrap';
-import {ControlLabel} from 'react-bootstrap';
-import {FormControl} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
-
 import jsCookies from 'js-cookie';
+
+import { saveUser, saveToken } from "../../redux/actions/user";
+import { API_URL, CUSTOMERS } from "../../assets/config/api";
+
+import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 
 class Login extends React.Component {
     config = {
@@ -31,20 +27,18 @@ class Login extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const customer = {username: this.state.username, password: this.state.password};
-        axios.post(API_URL + CUSTOMERS + 'authenticate', {customer}, this.config)
+        const customer = { username: this.state.username, password: this.state.password };
+        axios.post(API_URL + CUSTOMERS + 'authenticate', { customer }, this.config)
             .then((response) => {
-                console.log(response);
                 if (response.data.success) {
                     this.props.saveUser(response.data.customer);
                     this.props.saveToken(response.data.token);
-                  
+
                     jsCookies.set('token', response.data.token);
 
                     this.setState({
                         redirect: true,
                     });
-                    console.log(response);
                 } else {
                     console.log('wrong user data');
                 }
@@ -70,11 +64,11 @@ class Login extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <FormGroup controlId="username" bsSize="large">
                         <ControlLabel>Username</ControlLabel>
-                        <FormControl type="text" value={this.state.username} onChange={this.handleChange}/>
+                        <FormControl type="text" value={this.state.username} onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup controlId="password" bsSize="large">
                         <ControlLabel>Password</ControlLabel>
-                        <FormControl type="password" value={this.state.password} onChange={this.handleChange}/>
+                        <FormControl type="password" value={this.state.password} onChange={this.handleChange} />
                     </FormGroup>
                     <Button disabled={!this.validateForm()} className="btn btn-success" type="submit">Login</Button>
                 </form>
