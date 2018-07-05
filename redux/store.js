@@ -5,7 +5,6 @@ import { logger } from './middleware/logger';
 
 
 export default (initialState = {}) => {
-
     const isServer = typeof window === 'undefined';
     let composeEnhancers;
 

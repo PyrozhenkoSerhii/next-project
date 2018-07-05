@@ -1,8 +1,8 @@
-import {SAVE_TOKEN, SAVE_USER} from "../costants/actionTypes";
+import {SAVE_TOKEN, SAVE_USER, DELETE_TOKEN} from "../costants/actionTypes";
 
 const initialState = {
     user: [],
-    token: ''
+    token: undefined
 };
 
 export default function userReducer(state = initialState, action) {
@@ -11,6 +11,8 @@ export default function userReducer(state = initialState, action) {
             return {...state, user: action.payload};
         case SAVE_TOKEN:
             return {...state, token: action.payload};
+        case DELETE_TOKEN:
+            return {...state, token: undefined};
         default:
             return state;
     }

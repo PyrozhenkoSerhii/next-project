@@ -11,6 +11,7 @@ import {ControlLabel} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 
+import jsCookies from 'js-cookie';
 
 class Login extends React.Component {
     config = {
@@ -37,7 +38,9 @@ class Login extends React.Component {
                 if (response.data.success) {
                     this.props.saveUser(response.data.customer);
                     this.props.saveToken(response.data.token);
-                    localStorage.setItem('token', response.data.token);
+                  
+                    jsCookies.set('token', response.data.token);
+
                     this.setState({
                         redirect: true,
                     });

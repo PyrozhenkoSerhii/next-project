@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Navbar from './navbar';
-import withRedux from "next-redux-wrapper";
-import initStore from "../redux/store";
 
 const Layout = (props) => (
     <div>
@@ -16,4 +14,4 @@ const Layout = (props) => (
     </div>
 );
 
-export default withRedux(initStore, null, null)(Layout);;
+export default Layout;

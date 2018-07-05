@@ -2,15 +2,15 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/product/catalog', function() {
           var comp = 
-      webpackJsonp([4],{
+      webpackJsonp([6],{
 
 /***/ "./assets/config/api.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return API_URL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return PRODUCTS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CUSTOMERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PRODUCTS; });
+/* unused harmony export CUSTOMERS */
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
 
@@ -51,9 +51,6 @@ var CUSTOMERS = 'customers/';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("./node_modules/next/head.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar__ = __webpack_require__("./components/navbar.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__ = __webpack_require__("./node_modules/next-redux-wrapper/lib/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__redux_store__ = __webpack_require__("./redux/store.js");
 var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\components\\layout.js";
 
 
@@ -66,49 +63,45 @@ var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\components\\layo
 
 
 
-
-
 var Layout = function Layout(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 5
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 6
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 7
     }
   }, "Next project"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://bootswatch.com/4/cerulean/bootstrap.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 8
     }
   })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__navbar__["a" /* default */], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 10
     }
   }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     }
   }, props.children));
 };
 
-var _default = __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_4__redux_store__["a" /* default */], null, null)(Layout);
-
+var _default = Layout;
 /* harmony default export */ __webpack_exports__["a"] = (_default);
-;
 ;
 
 (function () {
@@ -134,13 +127,17 @@ var _default = __WEBPACK_IMPORTED_MODULE_3_next_redux_wrapper___default()(__WEBP
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("./node_modules/next/link.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_next_link__ = __webpack_require__("./node_modules/next/link.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_js_cookie__ = __webpack_require__("./node_modules/js-cookie/src/js.cookie.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_js_cookie__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router__ = __webpack_require__("./node_modules/next/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_router__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__redux_actions_user__ = __webpack_require__("./redux/actions/user.js");
 var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js";
-
 
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
@@ -166,68 +163,86 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+
+
+
 var Navbar =
 /*#__PURE__*/
 function (_Component) {
   _inherits(Navbar, _Component);
 
-  function Navbar() {
-    var _ref;
-
-    var _temp, _this;
+  function Navbar(props) {
+    var _this;
 
     _classCallCheck(this, Navbar);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "logout", {
+    _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+    Object.defineProperty(_assertThisInitialized(_this), "logout", {
       configurable: true,
       enumerable: true,
       writable: true,
       value: function value() {
-        localStorage.clear();
+        __WEBPACK_IMPORTED_MODULE_3_js_cookie___default.a.remove('token');
+
+        _this.props.deleteToken();
+
+        _this.setState({
+          redirect: true
+        });
       }
-    }), _temp));
+    });
+    Object.defineProperty(_assertThisInitialized(_this), "style", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: {
+        marginBot: '100px'
+      }
+    });
+    _this.state = {
+      redirect: false
+    };
+    return _this;
   }
 
   _createClass(Navbar, [{
     key: "render",
-    // loggedIn = () => {
-    //     return token = localStorage.getItem(token) !== undefined;
-    // };
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      if (this.state.redirect) {
+        __WEBPACK_IMPORTED_MODULE_4_next_router___default.a.push('/user/login');
+      }
+
+      return __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+        style: this.style,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 34
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         className: "navbar navbar-expand-lg fixed-top navbar-dark bg-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 35
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 36
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_next_link___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 37
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
         className: "navbar-brand",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 38
         }
-      }, "Next.js Project")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+      }, "Next.js Project")), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("button", {
         className: "navbar-toggler",
         type: "button",
         "data-toggle": "collapse",
@@ -237,127 +252,127 @@ function (_Component) {
         "aria-label": "Toggle navigation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
-        className: "navbar-toggler-icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        }
-      })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-        className: "collapse navbar-collapse",
-        id: "navbarResponsive",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
-        className: "navbar-nav",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }, !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        className: "nav-item",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-        prefetch: true,
-        href: "/product/catalog",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        className: "nav-link",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 40
         }
-      }, "Catalog"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        className: "nav-item",
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("span", {
+        className: "navbar-toggler-icon",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-        href: "/product/order",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        className: "nav-link",
+      })), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarResponsive",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
         }
-      }, "Order"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("ul", {
+        className: "navbar-nav",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      }, this.props.token && __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("li", {
         className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_next_link___default.a, {
+        prefetch: true,
+        href: "/product/catalog",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-        href: "/user/login",
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
+        className: "nav-link",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 49
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        className: "nav-link",
+      }, "Catalog"))), this.props.token && __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("li", {
+        className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 52
         }
-      }, "Login"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        className: "nav-item",
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_next_link___default.a, {
+        href: "/product/order",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 53
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-        href: "/user/register",
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
+        className: "nav-link",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 54
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-        className: "nav-link",
+      }, "Order"))), !this.props.token && __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("li", {
+        className: "nav-item",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         }
-      }, "Register"))), !this.props.authenticated && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        className: "nav-item",
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_next_link___default.a, {
+        href: "/user/login",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
+        className: "nav-link",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 59
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      }, "Login"))), !this.props.token && __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_next_link___default.a, {
+        href: "/user/register",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
+        className: "nav-link",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        }
+      }, "Register"))), this.props.token && __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("li", {
+        className: "nav-item",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        }
+      }, __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("a", {
         className: "nav-link",
         onClick: this.logout,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 69
         }
-      }, "Register")))))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+      }, "Logout")))))), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 75
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 76
         }
-      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+      }), __WEBPACK_IMPORTED_MODULE_2_react___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 77
         }
       }));
     }
@@ -368,33 +383,27 @@ function (_Component) {
       // @ts-ignore
       this[key] = eval(code);
     }
-  }], [{
-    key: "getInitialProps",
-    value: function getInitialProps(_ref2) {
-      var req = _ref2.req;
-      var isServer = !!req;
-      var token = true;
-
-      if (!isServer) {
-        token = localStorage.getItem('token') !== undefined;
-      }
-
-      return {
-        authenticated: true
-      };
-    }
   }]);
 
   return Navbar;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+}(__WEBPACK_IMPORTED_MODULE_2_react__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    userData: state.user
+    token: state.user.token
   };
 };
 
-var _default = Navbar;
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    deleteToken: function deleteToken() {
+      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_5__redux_actions_user__["a" /* deleteToken */])());
+    }
+  };
+};
+
+var _default = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["b" /* connect */])(mapStateToProps, mapDispatchToProps)(Navbar);
+
 /* harmony default export */ __webpack_exports__["a"] = (_default);
 ;
 
@@ -409,6 +418,7 @@ var _default = Navbar;
 
   reactHotLoader.register(Navbar, "Navbar", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
   reactHotLoader.register(mapStateToProps, "mapStateToProps", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
+  reactHotLoader.register(mapDispatchToProps, "mapDispatchToProps", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
   reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\components\\navbar.js");
   leaveModule(module);
 })();
@@ -422,72 +432,6 @@ var _default = Navbar;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/core-js/library/fn/json/stringify.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/extends.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var _Object$assign = __webpack_require__("./node_modules/@babel/runtime/core-js/object/assign.js");
-
-function _extends() {
-  module.exports = _extends = _Object$assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-module.exports = _extends;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-var _Object$getOwnPropertySymbols = __webpack_require__("./node_modules/@babel/runtime/core-js/object/get-own-property-symbols.js");
-
-var _Object$keys = __webpack_require__("./node_modules/@babel/runtime/core-js/object/keys.js");
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-
-  var sourceKeys = _Object$keys(source);
-
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  if (_Object$getOwnPropertySymbols) {
-    var sourceSymbolKeys = _Object$getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-module.exports = _objectWithoutProperties;
 
 /***/ }),
 
@@ -1138,6 +1082,182 @@ module.exports = window.fetch || (window.fetch = __webpack_require__("./node_mod
 
 /***/ }),
 
+/***/ "./node_modules/js-cookie/src/js.cookie.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * JavaScript Cookie v2.2.0
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+;(function (factory) {
+	var registeredInModuleLoader = false;
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		registeredInModuleLoader = true;
+	}
+	if (true) {
+		module.exports = factory();
+		registeredInModuleLoader = true;
+	}
+	if (!registeredInModuleLoader) {
+		var OldCookies = window.Cookies;
+		var api = window.Cookies = factory();
+		api.noConflict = function () {
+			window.Cookies = OldCookies;
+			return api;
+		};
+	}
+}(function () {
+	function extend () {
+		var i = 0;
+		var result = {};
+		for (; i < arguments.length; i++) {
+			var attributes = arguments[ i ];
+			for (var key in attributes) {
+				result[key] = attributes[key];
+			}
+		}
+		return result;
+	}
+
+	function init (converter) {
+		function api (key, value, attributes) {
+			var result;
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			// Write
+
+			if (arguments.length > 1) {
+				attributes = extend({
+					path: '/'
+				}, api.defaults, attributes);
+
+				if (typeof attributes.expires === 'number') {
+					var expires = new Date();
+					expires.setMilliseconds(expires.getMilliseconds() + attributes.expires * 864e+5);
+					attributes.expires = expires;
+				}
+
+				// We're using "expires" because "max-age" is not supported by IE
+				attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
+				try {
+					result = JSON.stringify(value);
+					if (/^[\{\[]/.test(result)) {
+						value = result;
+					}
+				} catch (e) {}
+
+				if (!converter.write) {
+					value = encodeURIComponent(String(value))
+						.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+				} else {
+					value = converter.write(value, key);
+				}
+
+				key = encodeURIComponent(String(key));
+				key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
+				key = key.replace(/[\(\)]/g, escape);
+
+				var stringifiedAttributes = '';
+
+				for (var attributeName in attributes) {
+					if (!attributes[attributeName]) {
+						continue;
+					}
+					stringifiedAttributes += '; ' + attributeName;
+					if (attributes[attributeName] === true) {
+						continue;
+					}
+					stringifiedAttributes += '=' + attributes[attributeName];
+				}
+				return (document.cookie = key + '=' + value + stringifiedAttributes);
+			}
+
+			// Read
+
+			if (!key) {
+				result = {};
+			}
+
+			// To prevent the for loop in the first place assign an empty array
+			// in case there are no cookies at all. Also prevents odd result when
+			// calling "get()"
+			var cookies = document.cookie ? document.cookie.split('; ') : [];
+			var rdecode = /(%[0-9A-Z]{2})+/g;
+			var i = 0;
+
+			for (; i < cookies.length; i++) {
+				var parts = cookies[i].split('=');
+				var cookie = parts.slice(1).join('=');
+
+				if (!this.json && cookie.charAt(0) === '"') {
+					cookie = cookie.slice(1, -1);
+				}
+
+				try {
+					var name = parts[0].replace(rdecode, decodeURIComponent);
+					cookie = converter.read ?
+						converter.read(cookie, name) : converter(cookie, name) ||
+						cookie.replace(rdecode, decodeURIComponent);
+
+					if (this.json) {
+						try {
+							cookie = JSON.parse(cookie);
+						} catch (e) {}
+					}
+
+					if (key === name) {
+						result = cookie;
+						break;
+					}
+
+					if (!key) {
+						result[name] = cookie;
+					}
+				} catch (e) {}
+			}
+
+			return result;
+		}
+
+		api.set = api;
+		api.get = function (key) {
+			return api.call(api, key);
+		};
+		api.getJSON = function () {
+			return api.apply({
+				json: true
+			}, [].slice.call(arguments));
+		};
+		api.defaults = {};
+
+		api.remove = function (key, attributes) {
+			api(key, '', extend(attributes, {
+				expires: -1
+			}));
+		};
+
+		api.withConverter = init;
+
+		return api;
+	}
+
+	return init(function () {});
+}));
+
+
+/***/ }),
+
 /***/ "./node_modules/lodash-es/_Symbol.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1456,231 +1576,6 @@ function isPlainObject(value) {
 
 /***/ }),
 
-/***/ "./node_modules/next-redux-wrapper/lib/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireWildcard = __webpack_require__("./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-var _interopRequireDefault = __webpack_require__("./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.setPromise = void 0;
-
-var _regenerator = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/regenerator/index.js"));
-
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
-
-var _extends2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/extends.js"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/objectWithoutProperties.js"));
-
-var _getPrototypeOf = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/core-js/object/get-prototype-of.js"));
-
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/classCallCheck.js"));
-
-var _createClass2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/createClass.js"));
-
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/inherits.js"));
-
-var _objectSpread2 = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/helpers/objectSpread.js"));
-
-var _promise = _interopRequireDefault(__webpack_require__("./node_modules/@babel/runtime/core-js/promise.js"));
-
-var _react = _interopRequireWildcard(__webpack_require__("./node_modules/react/cjs/react.development.js"));
-
-var _Promise = _promise.default;
-var _debug = false;
-var DEFAULT_KEY = '__NEXT_REDUX_STORE__';
-var isServer = typeof window === 'undefined';
-
-var setPromise = function setPromise(Promise) {
-  return _Promise = Promise;
-};
-/**
- * @param makeStore
- * @param initialState
- * @param config
- * @param ctx
- * @return {{getState: function, dispatch: function}}
- */
-
-
-exports.setPromise = setPromise;
-
-var initStore = function initStore(_ref) {
-  var makeStore = _ref.makeStore,
-      initialState = _ref.initialState,
-      config = _ref.config,
-      _ref$ctx = _ref.ctx,
-      ctx = _ref$ctx === void 0 ? {} : _ref$ctx;
-  var storeKey = config.storeKey;
-
-  var createStore = function createStore() {
-    return makeStore(config.deserializeState(initialState), (0, _objectSpread2.default)({}, ctx, config, {
-      isServer: isServer
-    }));
-  };
-
-  if (isServer) return createStore(); // Memoize store if client
-
-  if (!window[storeKey]) {
-    window[storeKey] = createStore();
-  }
-
-  return window[storeKey];
-};
-/**
- * @param makeStore
- * @param config
- * @return {function(App): {getInitialProps, new(): WrappedApp, prototype: WrappedApp}}
- */
-
-
-var _default = function _default(makeStore) {
-  var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  config = (0, _objectSpread2.default)({
-    storeKey: DEFAULT_KEY,
-    debug: _debug,
-    serializeState: function serializeState(state) {
-      return state;
-    },
-    deserializeState: function deserializeState(state) {
-      return state;
-    }
-  }, config);
-  return function (App) {
-    var _class, _temp;
-
-    return _temp = _class =
-    /*#__PURE__*/
-    function (_Component) {
-      (0, _inherits2.default)(WrappedApp, _Component);
-
-      function WrappedApp(props, context) {
-        var _this;
-
-        (0, _classCallCheck2.default)(this, WrappedApp);
-        _this = (0, _possibleConstructorReturn2.default)(this, (WrappedApp.__proto__ || (0, _getPrototypeOf.default)(WrappedApp)).call(this, props, context));
-        var initialState = props.initialState,
-            store = props.store;
-        var hasStore = store && 'dispatch' in store && 'getState' in store; //TODO Always recreate the store even if it could be reused? @see https://github.com/zeit/next.js/pull/4295#pullrequestreview-118516366
-
-        store = hasStore ? store : initStore({
-          makeStore: makeStore,
-          initialState: initialState,
-          config: config
-        });
-        if (config.debug) console.log('4. WrappedApp.render', hasStore ? 'picked up existing one,' : 'created new store with', 'initialState', initialState);
-        _this.store = store;
-        return _this;
-      }
-
-      (0, _createClass2.default)(WrappedApp, [{
-        key: "render",
-        value: function render() {
-          var _props = this.props,
-              initialProps = _props.initialProps,
-              initialState = _props.initialState,
-              store = _props.store,
-              props = (0, _objectWithoutProperties2.default)(_props, ["initialProps", "initialState", "store"]); // Cmp render must return something like <Provider><Component/></Provider>
-
-          return _react.default.createElement(App, (0, _extends2.default)({}, props, initialProps, {
-            store: this.store
-          }));
-        }
-      }]);
-      return WrappedApp;
-    }(_react.Component), Object.defineProperty(_class, "displayName", {
-      configurable: true,
-      enumerable: true,
-      writable: true,
-      value: "withRedux(".concat(App.displayName || App.name || 'App', ")")
-    }), Object.defineProperty(_class, "getInitialProps", {
-      configurable: true,
-      enumerable: true,
-      writable: true,
-      value: function () {
-        var _value = (0, _asyncToGenerator2.default)(
-        /*#__PURE__*/
-        _regenerator.default.mark(function _callee(appCtx) {
-          var store, initialProps;
-          return _regenerator.default.wrap(function _callee$(_context) {
-            while (1) {
-              switch (_context.prev = _context.next) {
-                case 0:
-                  if (appCtx) {
-                    _context.next = 2;
-                    break;
-                  }
-
-                  throw new Error('No app context');
-
-                case 2:
-                  if (appCtx.ctx) {
-                    _context.next = 4;
-                    break;
-                  }
-
-                  throw new Error('No page context');
-
-                case 4:
-                  store = initStore({
-                    makeStore: makeStore,
-                    config: config,
-                    ctx: appCtx.ctx
-                  });
-                  if (config.debug) console.log('1. WrappedApp.getInitialProps wrapper got the store with state', store.getState());
-                  appCtx.ctx.store = store;
-                  appCtx.ctx.isServer = isServer;
-                  initialProps = {};
-
-                  if (!('getInitialProps' in App)) {
-                    _context.next = 13;
-                    break;
-                  }
-
-                  _context.next = 12;
-                  return App.getInitialProps.call(App, appCtx);
-
-                case 12:
-                  initialProps = _context.sent;
-
-                case 13:
-                  if (config.debug) console.log('3. WrappedApp.getInitialProps has store state', store.getState());
-                  return _context.abrupt("return", {
-                    store: store,
-                    isServer: isServer,
-                    initialState: config.serializeState(store.getState()),
-                    initialProps: initialProps
-                  });
-
-                case 15:
-                case "end":
-                  return _context.stop();
-              }
-            }
-          }, _callee, this);
-        }));
-
-        return function value(_x) {
-          return _value.apply(this, arguments);
-        };
-      }()
-    }), _temp;
-  };
-};
-
-exports.default = _default;
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/lib/link.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1915,6 +1810,14 @@ module.exports = __webpack_require__("./node_modules/next/dist/lib/head.js")
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/next/dist/lib/link.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/next/router.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./node_modules/next/dist/lib/router/index.js")
 
 
 /***/ }),
@@ -3392,33 +3295,6 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-
-/***/ }),
-
-/***/ "./node_modules/redux-thunk/es/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-function createThunkMiddleware(extraArgument) {
-  return function (_ref) {
-    var dispatch = _ref.dispatch,
-        getState = _ref.getState;
-    return function (next) {
-      return function (action) {
-        if (typeof action === 'function') {
-          return action(dispatch, getState, extraArgument);
-        }
-
-        return next(action);
-      };
-    };
-  };
-}
-
-var thunk = createThunkMiddleware();
-thunk.withExtraArgument = createThunkMiddleware;
-
-/* harmony default export */ __webpack_exports__["a"] = (thunk);
 
 /***/ }),
 
@@ -4910,7 +4786,7 @@ function (_React$Component) {
 
               case 10:
                 _context.next = 12;
-                return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["c" /* PRODUCTS */] + 'getAll', {
+                return __WEBPACK_IMPORTED_MODULE_3_isomorphic_unfetch___default()(__WEBPACK_IMPORTED_MODULE_5__assets_config_api__["a" /* API_URL */] + __WEBPACK_IMPORTED_MODULE_5__assets_config_api__["b" /* PRODUCTS */] + 'getAll', {
                   method: 'GET'
                 });
 
@@ -5046,7 +4922,7 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     uploadProducts: function uploadProducts(products) {
-      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_6__redux_actions_product__["a" /* uploadProducts */])(products));
+      return dispatch(Object(__WEBPACK_IMPORTED_MODULE_6__redux_actions_product__["b" /* uploadProducts */])(products));
     }
   };
 };
@@ -5101,8 +4977,8 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export orderProduct */
 /* unused harmony export updateOrder */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return uploadProducts; });
-/* unused harmony export remove */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return uploadProducts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return remove; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
@@ -5113,19 +4989,19 @@ var _default = Object(__WEBPACK_IMPORTED_MODULE_7_react_redux__["b" /* connect *
 
 var orderProduct = function orderProduct(product) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* ORDER_PRODUCT */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* ORDER_PRODUCT */],
     payload: product
   };
 };
 var updateOrder = function updateOrder(product) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* UPDATE_ORDER */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPDATE_ORDER */],
     payload: product
   };
 };
 var uploadProducts = function uploadProducts(products) {
   return {
-    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPLOAD_PRODUCTS */],
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["g" /* UPLOAD_PRODUCTS */],
     payload: products
   };
 };
@@ -5158,16 +5034,71 @@ var remove = function remove(id) {
 
 /***/ }),
 
+/***/ "./redux/actions/user.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* unused harmony export saveUser */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return deleteToken; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+
+var saveUser = function saveUser(user) {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* SAVE_USER */],
+    payload: user
+  };
+};
+var saveToken = function saveToken(token) {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* SAVE_TOKEN */],
+    payload: token
+  };
+};
+var deleteToken = function deleteToken() {
+  return {
+    type: __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* DELETE_TOKEN */]
+  };
+};
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(saveUser, "saveUser", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
+  reactHotLoader.register(saveToken, "saveToken", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
+  reactHotLoader.register(deleteToken, "deleteToken", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\actions\\user.js");
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./redux/costants/actionTypes.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ORDER_PRODUCT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return UPDATE_ORDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPLOAD_PRODUCTS; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ORDER_PRODUCT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return UPDATE_ORDER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return UPLOAD_PRODUCTS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DELETE_FROM_ORDER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_USER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SAVE_TOKEN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SAVE_USER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SAVE_TOKEN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return DELETE_TOKEN; });
 /* unused harmony export LOGOUT */
 /* unused harmony export DATA_LOAD_SUCCESS */
 /* unused harmony export SAVE_MY_DATA */
@@ -5183,6 +5114,7 @@ var UPLOAD_PRODUCTS = 'UPLOAD_PRODUCTS';
 var DELETE_FROM_ORDER = 'DELETE_FROM_ORDER';
 var SAVE_USER = 'SAVE_USER';
 var SAVE_TOKEN = 'SAVE_TOKEN';
+var DELETE_TOKEN = 'DELETE_TOKEN';
 var LOGOUT = 'LOGOUT';
 var DATA_LOAD_SUCCESS = 'DATA_LOAD_SUCCESS';
 var SAVE_MY_DATA = 'SAVE_MY_DATA';
@@ -5203,6 +5135,7 @@ var SAVE_MY_DATA = 'SAVE_MY_DATA';
   reactHotLoader.register(DELETE_FROM_ORDER, "DELETE_FROM_ORDER", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_USER, "SAVE_USER", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_TOKEN, "SAVE_TOKEN", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
+  reactHotLoader.register(DELETE_TOKEN, "DELETE_TOKEN", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(LOGOUT, "LOGOUT", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(DATA_LOAD_SUCCESS, "DATA_LOAD_SUCCESS", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
   reactHotLoader.register(SAVE_MY_DATA, "SAVE_MY_DATA", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\costants\\actionTypes.js");
@@ -5214,292 +5147,7 @@ var SAVE_MY_DATA = 'SAVE_MY_DATA';
 
 /***/ }),
 
-/***/ "./redux/middleware/logger.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return logger; });
-(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var logger = function logger(store) {
-  return function (next) {
-    return function (action) {
-      //console.log('dispatching', action.type);
-      var result = next(action); //console.log('new state', store.getState());
-
-      return result;
-    };
-  };
-};
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(logger, "logger", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\middleware\\logger.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ "./redux/reducers/product.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (immutable) */ __webpack_exports__["a"] = productReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
-(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var initialState = {
-  productState: [],
-  products: []
-};
-function productReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  var action = arguments.length > 1 ? arguments[1] : undefined;
-
-  switch (action.type) {
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["b" /* ORDER_PRODUCT */]:
-      return _objectSpread({}, state, {
-        productState: _toConsumableArray(state.productState).concat([action.payload])
-      });
-
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["e" /* UPDATE_ORDER */]:
-      var newState = state.productState.filter(function (el) {
-        return el.id !== action.payload.id;
-      });
-      return _objectSpread({}, state, {
-        productState: _toConsumableArray(newState).concat([action.payload])
-      });
-
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["f" /* UPLOAD_PRODUCTS */]:
-      return _objectSpread({}, state, {
-        products: action.payload
-      });
-
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["a" /* DELETE_FROM_ORDER */]:
-      return _objectSpread({}, state, {
-        productState: state.productState.filter(function (el) {
-          return el.id !== action.payload;
-        })
-      });
-
-    default:
-      return state;
-  }
-}
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(initialState, "initialState", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\product.js");
-  reactHotLoader.register(productReducer, "productReducer", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\product.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ "./redux/reducers/root.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("./node_modules/redux/es/redux.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product__ = __webpack_require__("./redux/reducers/product.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user__ = __webpack_require__("./redux/reducers/user.js");
-(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-
-
-
-
-var _default = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["c" /* combineReducers */])({
-  product: __WEBPACK_IMPORTED_MODULE_1__product__["a" /* default */],
-  user: __WEBPACK_IMPORTED_MODULE_2__user__["a" /* default */]
-});
-
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\root.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ "./redux/reducers/user.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony export (immutable) */ __webpack_exports__["a"] = userReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__ = __webpack_require__("./redux/costants/actionTypes.js");
-(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-var initialState = {
-  user: [],
-  token: ''
-};
-function userReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  var action = arguments.length > 1 ? arguments[1] : undefined;
-
-  switch (action.type) {
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["d" /* SAVE_USER */]:
-      return _objectSpread({}, state, {
-        user: action.payload
-      });
-
-    case __WEBPACK_IMPORTED_MODULE_0__costants_actionTypes__["c" /* SAVE_TOKEN */]:
-      return _objectSpread({}, state, {
-        token: action.payload
-      });
-
-    default:
-      return state;
-  }
-}
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(initialState, "initialState", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\user.js");
-  reactHotLoader.register(userReducer, "userReducer", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\reducers\\user.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ "./redux/store.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_thunk__ = __webpack_require__("./node_modules/redux-thunk/es/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__("./node_modules/redux/es/redux.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_root__ = __webpack_require__("./redux/reducers/root.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__middleware_logger__ = __webpack_require__("./redux/middleware/logger.js");
-(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-
-
-
-
-
-var _default = function _default() {
-  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var isServer = typeof window === 'undefined';
-  var composeEnhancers;
-
-  if (!isServer) {
-    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
-  } else {
-    composeEnhancers = __WEBPACK_IMPORTED_MODULE_1_redux__["d" /* compose */];
-  }
-
-  var date = new Date();
-  console.log(">> Creating store ".concat(date.getHours(), ":").concat(date.getMinutes(), ":").concat(date.getSeconds(), "(").concat(date.getMilliseconds(), ")"));
-  return Object(__WEBPACK_IMPORTED_MODULE_1_redux__["e" /* createStore */])(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState, composeEnhancers(Object(__WEBPACK_IMPORTED_MODULE_1_redux__["a" /* applyMiddleware */])(__WEBPACK_IMPORTED_MODULE_3__middleware_logger__["a" /* logger */], __WEBPACK_IMPORTED_MODULE_0_redux_thunk__["a" /* default */])));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_default, "default", "E:\\Projects\\serhii\\nextjs-redux-project\\redux\\store.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ 3:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/product/catalog.js");
@@ -5507,7 +5155,7 @@ module.exports = __webpack_require__("./pages/product/catalog.js");
 
 /***/ })
 
-},[3])
+},[5])
           return { page: comp.default }
         })
       ;
