@@ -87,14 +87,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_redux_wrapper__ = __webpack_require__("next-redux-wrapper");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_next_redux_wrapper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__redux_store__ = __webpack_require__("./redux/store.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_js_cookie__ = __webpack_require__("js-cookie");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_js_cookie__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_cookie__ = __webpack_require__("cookie");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_cookie__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__redux_actions_user__ = __webpack_require__("./redux/actions/user.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_socket_io_client__ = __webpack_require__("socket.io-client");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_socket_io_client__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_js_cookie__ = __webpack_require__("js-cookie");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_js_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_js_cookie__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_cookie__ = __webpack_require__("cookie");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_cookie___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_cookie__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__redux_actions_user__ = __webpack_require__("./redux/actions/user.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_redux_persist_integration_react__ = __webpack_require__("redux-persist/integration/react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_redux_persist_integration_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_redux_persist_integration_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__redux_store__ = __webpack_require__("./redux/store.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__redux_persistedStore__ = __webpack_require__("./redux/persistedStore.js");
 
 var _jsxFileName = "E:\\Projects\\serhii\\nextjs-redux-project\\pages\\_app.js";
 
@@ -125,7 +126,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_4_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_5__redux_store__["a" /* default */])(
+
+/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_4_next_redux_wrapper___default()(__WEBPACK_IMPORTED_MODULE_10__redux_persistedStore__["a" /* default */])(
 /*#__PURE__*/
 function (_App) {
   _inherits(MyApp, _App);
@@ -147,11 +149,11 @@ function (_App) {
                   cookies = ctx.req.headers.cookie;
 
                   if (typeof cookies === 'string') {
-                    cookiesJSON = __WEBPACK_IMPORTED_MODULE_7_cookie___default.a.parse(cookies);
+                    cookiesJSON = __WEBPACK_IMPORTED_MODULE_6_cookie___default.a.parse(cookies);
                     token = cookiesJSON.token;
                   }
                 } else {
-                  cookies = __WEBPACK_IMPORTED_MODULE_6_js_cookie___default.a.get('token');
+                  cookies = __WEBPACK_IMPORTED_MODULE_5_js_cookie___default.a.get('token');
                 }
 
                 if (!Component.getInitialProps) {
@@ -200,7 +202,7 @@ function (_App) {
     _this = _possibleConstructorReturn(this, (MyApp.__proto__ || Object.getPrototypeOf(MyApp)).call(this));
     var cookies = props.cookies,
         store = props.store;
-    store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_8__redux_actions_user__["b" /* saveToken */])(cookies));
+    store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_7__redux_actions_user__["b" /* saveToken */])(cookies));
     _this.state = {
       socket: null
     };
@@ -208,19 +210,6 @@ function (_App) {
   }
 
   _createClass(MyApp, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var socket = __WEBPACK_IMPORTED_MODULE_9_socket_io_client___default()('https://obscure-stream-46512.herokuapp.com/');
-      this.setState({
-        socket: socket
-      });
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.state.socket.close();
-    }
-  }, {
     key: "render",
     value: function render() {
       var _props = this.props,
@@ -230,21 +219,33 @@ function (_App) {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_next_app__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 49
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
         store: store,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 50
+        }
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_redux_persist_integration_react__["PersistGate"], {
+        persistor: store.__persistor,
+        loading: __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 51
+          }
+        }, "Loading..."),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
         }
       }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Component, _extends({}, pageProps, {
         socket: this.state.socket,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 52
         }
-      }))));
+      })))));
     }
   }]);
 
@@ -257,7 +258,7 @@ function (_App) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export saveUser */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return saveUser; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveToken; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return deleteToken; });
 /* unused harmony export testServerRedux */
@@ -335,6 +336,66 @@ var logger = function logger(store) {
     };
   };
 };
+
+/***/ }),
+
+/***/ "./redux/persistedStore.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_thunk__ = __webpack_require__("redux-thunk");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_thunk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux_thunk__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__("redux");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_root__ = __webpack_require__("./redux/reducers/root.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist__ = __webpack_require__("redux-persist");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_redux_persist__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage__ = __webpack_require__("redux-persist/lib/storage");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2__ = __webpack_require__("redux-persist/lib/stateReconciler/autoMergeLevel2");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2__);
+
+
+
+
+
+
+
+var makeConfiguredStore = function makeConfiguredStore(reducer, initialState) {
+  var isServer = typeof window === 'undefined';
+  var composeEnhancers;
+
+  if (!isServer) {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+  } else {
+    composeEnhancers = __WEBPACK_IMPORTED_MODULE_1_redux__["compose"];
+  }
+
+  var date = new Date();
+  console.log(">> Creating store ".concat(date.getHours(), ":").concat(date.getMinutes(), ":").concat(date.getSeconds(), "(").concat(date.getMilliseconds(), ")"));
+  return Object(__WEBPACK_IMPORTED_MODULE_1_redux__["createStore"])(reducer, initialState, composeEnhancers(Object(__WEBPACK_IMPORTED_MODULE_1_redux__["applyMiddleware"])(__WEBPACK_IMPORTED_MODULE_0_redux_thunk___default.a)));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function (initialState, _ref) {
+  var isServer = _ref.isServer,
+      req = _ref.req,
+      debug = _ref.debug,
+      storeKey = _ref.storeKey;
+
+  if (isServer) {
+    return makeConfiguredStore(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState);
+  } else {
+    var persistConfig = {
+      key: 'root',
+      storage: __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage___default.a,
+      autoMergeLevel2: __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2___default.a
+    };
+    var persistedReducer = Object(__WEBPACK_IMPORTED_MODULE_3_redux_persist__["persistReducer"])(persistConfig, __WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */]);
+    var store = makeConfiguredStore(persistedReducer, initialState);
+    store.__persistor = Object(__WEBPACK_IMPORTED_MODULE_3_redux_persist__["persistStore"])(store);
+    return store;
+  }
+});
 
 /***/ }),
 
@@ -477,7 +538,7 @@ function userReducer() {
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = (function () {
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
   var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var isServer = typeof window === 'undefined';
   var composeEnhancers;
@@ -559,17 +620,38 @@ module.exports = require("redux");
 
 /***/ }),
 
+/***/ "redux-persist":
+/***/ (function(module, exports) {
+
+module.exports = require("redux-persist");
+
+/***/ }),
+
+/***/ "redux-persist/integration/react":
+/***/ (function(module, exports) {
+
+module.exports = require("redux-persist/integration/react");
+
+/***/ }),
+
+/***/ "redux-persist/lib/stateReconciler/autoMergeLevel2":
+/***/ (function(module, exports) {
+
+module.exports = require("redux-persist/lib/stateReconciler/autoMergeLevel2");
+
+/***/ }),
+
+/***/ "redux-persist/lib/storage":
+/***/ (function(module, exports) {
+
+module.exports = require("redux-persist/lib/storage");
+
+/***/ }),
+
 /***/ "redux-thunk":
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
-
-/***/ }),
-
-/***/ "socket.io-client":
-/***/ (function(module, exports) {
-
-module.exports = require("socket.io-client");
 
 /***/ })
 

@@ -2,13 +2,16 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import App, { Container } from 'next/app'
 import withRedux from 'next-redux-wrapper'
-import initStore from '../redux/store'
+
 import clientCookies from 'js-cookie';
 import serverCookies from 'cookie';
 import { saveToken } from '../redux/actions/user';
-import socketIO from 'socket.io-client';
+import { PersistGate } from 'redux-persist/integration/react';
 
-export default withRedux(initStore)(class MyApp extends App {
+import store from '../redux/store'
+import persistedStore from '../redux/persistedStore';
+
+export default withRedux(persistedStore)(class MyApp extends App {
 	static async getInitialProps({ Component, ctx }) {
 		let cookies;
 
@@ -39,22 +42,15 @@ export default withRedux(initStore)(class MyApp extends App {
 		}
 	}
 
-	componentDidMount() {
-		const socket = socketIO('https://obscure-stream-46512.herokuapp.com/');
-		this.setState({ socket });
-	}
-
-	componentWillUnmount() {
-		this.state.socket.close()
-	}
-
 	render() {
 		const { Component, pageProps, store } = this.props
 
 		return (
 			<Container>
 				<Provider store={store}>
-					<Component {...pageProps} socket={this.state.socket} />
+					<PersistGate persistor={store.__persistor} loading={<div>Loading...</div>}>
+						<Component {...pageProps} socket={this.state.socket} />
+					</PersistGate>
 				</Provider>
 			</Container>
 		)

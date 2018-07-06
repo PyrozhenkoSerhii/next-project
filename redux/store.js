@@ -3,7 +3,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './reducers/root';
 import { logger } from './middleware/logger';
 
-
 export default (initialState = {}) => {
     const isServer = typeof window === 'undefined';
     let composeEnhancers;

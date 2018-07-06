@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1f0d0f88f7e22155fcf6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "662496ccfbb575377082"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_app.js","2":"bundles\\pages\\_error.js","5":"bundles\\pages\\product\\view.js","6":"bundles\\pages\\product\\catalog.js"}[chunkId]||chunkId) + "-" + {"0":"afd80e60608f4b8508fa","1":"59c8b97314e7c8d6db35","2":"2f8231705bd0832d2e88","5":"bc319324fc5931b25be6","6":"1084b7a09298e74a815e"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles\\pages\\_app.js","2":"bundles\\pages\\_error.js","4":"bundles\\pages\\index.js","5":"bundles\\pages\\user\\login.js","6":"bundles\\pages\\product\\catalog.js","7":"bundles\\pages\\product\\order.js","8":"bundles\\pages\\product\\view.js"}[chunkId]||chunkId) + "-" + {"0":"afd80e60608f4b8508fa","1":"81bd53becfbbded765a0","2":"2f8231705bd0832d2e88","4":"871041283c3fc8bf5573","5":"91286f7a4a926dccf6dc","6":"686f92cbd5f176179735","7":"f3f8701b2e50eea539b7","8":"7a6a7973da25d101bc7a"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
