@@ -258,7 +258,7 @@ function (_App) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return saveUser; });
+/* unused harmony export saveUser */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return saveToken; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return deleteToken; });
 /* unused harmony export testServerRedux */
@@ -347,14 +347,10 @@ var logger = function logger(store) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux_thunk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux_thunk__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux__ = __webpack_require__("redux");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_root__ = __webpack_require__("./redux/reducers/root.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist__ = __webpack_require__("redux-persist");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_redux_persist__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage__ = __webpack_require__("redux-persist/lib/storage");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2__ = __webpack_require__("redux-persist/lib/stateReconciler/autoMergeLevel2");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2__);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__reducers_persistedRoot__ = __webpack_require__("./redux/reducers/persistedRoot.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers_root__ = __webpack_require__("./redux/reducers/root.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist__ = __webpack_require__("redux-persist");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_redux_persist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_redux_persist__);
 
 
 
@@ -377,25 +373,56 @@ var makeConfiguredStore = function makeConfiguredStore(reducer, initialState) {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (function (initialState, _ref) {
-  var isServer = _ref.isServer,
-      req = _ref.req,
-      debug = _ref.debug,
-      storeKey = _ref.storeKey;
+  var isServer = _ref.isServer;
 
   if (isServer) {
-    return makeConfiguredStore(__WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */], initialState);
+    return makeConfiguredStore(__WEBPACK_IMPORTED_MODULE_3__reducers_root__["a" /* default */], initialState);
   } else {
-    var persistConfig = {
-      key: 'root',
-      storage: __WEBPACK_IMPORTED_MODULE_4_redux_persist_lib_storage___default.a,
-      autoMergeLevel2: __WEBPACK_IMPORTED_MODULE_5_redux_persist_lib_stateReconciler_autoMergeLevel2___default.a
-    };
-    var persistedReducer = Object(__WEBPACK_IMPORTED_MODULE_3_redux_persist__["persistReducer"])(persistConfig, __WEBPACK_IMPORTED_MODULE_2__reducers_root__["a" /* default */]);
-    var store = makeConfiguredStore(persistedReducer, initialState);
-    store.__persistor = Object(__WEBPACK_IMPORTED_MODULE_3_redux_persist__["persistStore"])(store);
+    var store = makeConfiguredStore(__WEBPACK_IMPORTED_MODULE_2__reducers_persistedRoot__["a" /* default */], initialState);
+    store.__persistor = Object(__WEBPACK_IMPORTED_MODULE_4_redux_persist__["persistStore"])(store);
     return store;
   }
 });
+
+/***/ }),
+
+/***/ "./redux/reducers/persistedRoot.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("redux");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_persist__ = __webpack_require__("redux-persist");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_persist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux_persist__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux_persist_lib_storage__ = __webpack_require__("redux-persist/lib/storage");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux_persist_lib_storage___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_redux_persist_lib_storage__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist_lib_stateReconciler_autoMergeLevel2__ = __webpack_require__("redux-persist/lib/stateReconciler/autoMergeLevel2");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_redux_persist_lib_stateReconciler_autoMergeLevel2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_redux_persist_lib_stateReconciler_autoMergeLevel2__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__product__ = __webpack_require__("./redux/reducers/product.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user__ = __webpack_require__("./redux/reducers/user.js");
+
+
+
+
+
+
+var productPersistConfig = {
+  key: 'product',
+  storage: __WEBPACK_IMPORTED_MODULE_2_redux_persist_lib_storage___default.a,
+  blacklist: ['products'],
+  autoMergeLevel2: __WEBPACK_IMPORTED_MODULE_3_redux_persist_lib_stateReconciler_autoMergeLevel2___default.a
+};
+var persistConfig = {
+  key: 'root',
+  storage: __WEBPACK_IMPORTED_MODULE_2_redux_persist_lib_storage___default.a,
+  autoMergeLevel2: __WEBPACK_IMPORTED_MODULE_3_redux_persist_lib_stateReconciler_autoMergeLevel2___default.a,
+  blacklist: ['product']
+};
+var rootReducer = Object(__WEBPACK_IMPORTED_MODULE_0_redux__["combineReducers"])({
+  product: Object(__WEBPACK_IMPORTED_MODULE_1_redux_persist__["persistReducer"])(productPersistConfig, __WEBPACK_IMPORTED_MODULE_4__product__["a" /* default */]),
+  user: __WEBPACK_IMPORTED_MODULE_5__user__["a" /* default */]
+});
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_redux_persist__["persistReducer"])(persistConfig, rootReducer));
 
 /***/ }),
 

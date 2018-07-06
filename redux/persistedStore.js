@@ -1,10 +1,10 @@
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware, compose } from 'redux';
+
+import persistedRootReducer from './reducers/persistedRoot';
 import rootReducer from './reducers/root';
 
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
+import { persistStore } from 'redux-persist';
 
 const makeConfiguredStore = (reducer, initialState) => {
     const isServer = typeof window === 'undefined';
@@ -22,18 +22,11 @@ const makeConfiguredStore = (reducer, initialState) => {
     return createStore(reducer, initialState, composeEnhancers(applyMiddleware(thunk)));
 }
 
-export default (initialState, { isServer, req, debug, storeKey }) => {
+export default (initialState, { isServer }) => {
     if (isServer) {
         return makeConfiguredStore(rootReducer, initialState);
     } else {
-        const persistConfig = {
-            key: 'root',
-            storage: storage,
-            autoMergeLevel2
-        };
-
-        const persistedReducer = persistReducer(persistConfig, rootReducer);
-        const store = makeConfiguredStore(persistedReducer, initialState);
+        const store = makeConfiguredStore(persistedRootReducer, initialState);
 
         store.__persistor = persistStore(store);
 
