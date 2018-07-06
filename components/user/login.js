@@ -35,6 +35,7 @@ class Login extends React.Component {
                     this.props.saveToken(response.data.token);
 
                     jsCookies.set('token', response.data.token);
+                    jsCookies.set('customer', response.data.customer);
 
                     this.setState({
                         redirect: true,

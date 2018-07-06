@@ -5,7 +5,8 @@ const Layout = (props) => (
     <div>
         <Head>
             <title>Next project</title>
-            <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+
         </Head>
         <Navbar/>
         <div className="container">
